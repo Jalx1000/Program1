@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="proyectoPractico01.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="13"/>
+        <UsageCount Value="93"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitproyecto01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitProyecto01"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="52"/>
+        <CursorPos X="13" Y="56"/>
+        <UsageCount Value="93"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="practicou01unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PracticoU01Unit"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="9" Y="24"/>
+        <FoldState Value=" T3U095x"/>
+        <UsageCount Value="93"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\messagedialogs.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="209"/>
+        <CursorPos X="10" Y="223"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="716"/>
+        <CursorPos Y="729"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Desktop\pascal\PrimerParcial\Aplicacion1.pas"/>
+        <UnitName Value="proyecto1uCompleto"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="633"/>
+        <UsageCount Value="9"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="72" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="26" Column="15" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="73" Column="3" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="26" Column="15" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="20" Column="48"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="74" Column="34" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="76" Column="34" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="84" Column="35" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="85" Column="31" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="81" Column="29" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="32" Column="8" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="34" Column="8" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="22" Column="48" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="110" Column="8" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="22" Column="37" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="123" Column="3" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="22" Column="32" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="98" Column="34" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="100" Column="34" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="111" Column="67" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="119" Column="48" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="111" Column="32" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="91" Column="19" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="111" Column="48" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="113" Column="48" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="unitproyecto01.pas"/>
+        <Caret Line="66" Column="65" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="54" Column="27" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="41" Column="8" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="54" Column="27" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="practicou01unit.pas"/>
+        <Caret Line="17" Column="17"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

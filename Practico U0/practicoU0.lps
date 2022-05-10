@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="practicoU0.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="3" Y="461"/>
+        <FoldState Value=" T3C095 pj2jI0R7]90jc0V[I6d0S3)"/>
+        <UsageCount Value="108"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\Practico U1\practicou01unit.pas"/>
+        <UnitName Value="PracticoU01Unit"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="63"/>
+        <FoldState Value=" T3iY0Jj"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\Practico U1\unitproyecto01.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit2>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
