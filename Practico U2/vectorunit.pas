@@ -5,7 +5,7 @@ unit VectorUnit;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils,Dialogs;
 	const MAX_ELE=1200;
 type
 
@@ -14,13 +14,16 @@ type
   vector = class
   private
 	  dim : integer; //DIMENSION DEL VECTOR
-    vectorElem : array [1..MAX_ELE] of integer; //TODO EL VECTOR //VECTOR ES SOLO DE ENTEROS
+    elem : array [1..MAX_ELE] of integer; //TODO EL VECTOR //VECTOR ES SOLO DE ENTEROS
   public
 	  constructor crear;
     function getDim():integer;
-    function getElemPos(pos:integer):integer;
-    procedure setVectorInsertarElem(vectorElem:integer);//pone un elemento en la ultima posicion
-    procedure setVectorElem(vectorElem:integer;pos:integer);
+
+    function getElem(pos:integer):integer;
+    procedure cargarElem();
+    procedure insertarElem(elemN:integer);//pone un elemento en la ultima posicion
+    procedure setElem(elemN:integer;pos:integer);
+    procedure eliminarElem(pos:integer);
 	end;
 
 implementation
@@ -30,9 +33,9 @@ implementation
 constructor vector.crear;
 var i:integer;
 begin
-  for i=1 to MAX_ELE do
+  for i:=1 to MAX_ELE do
   begin
-    vectorElem[i]=0;
+    elem[i]:=0;
   end;
   dim:=0;
 end;
@@ -42,21 +45,49 @@ begin
   Result:=dim;
 end;
 
-function vector.getElemPos(pos: integer): integer;
+function vector.getElem(pos: integer): integer;
 begin
-  Result:=vectorElem[pos];
+  Result:=elem[pos];
 end;
 
-procedure vector.setVectorInsertarElem(vectorElem: integer);
+procedure vector.cargarElem();
+var i:integer;
+		dimTeclado,elemTeclado:String;
 begin
-  dim=dim+1;
-  vectorElem[dim]=vectorElem;
+  	 dimTeclado:=InputBox('Introducir dim','','');
+     dim:=StrToInt(dimTeclado);
+     for i:=0 to dim do
+     begin
+       elemTeclado:=InputBox('Introducir elem: ' + IntToStr(i),'','');
+       elem[i]:=StrToInt(elemTeclado);
+     end;
 end;
 
-procedure vector.setVectorElem(vectorElem: integer; pos: integer);
-begin
 
+procedure vector.insertarElem(elemN: integer);
+begin
+   dim:=dim+1;
+ 	elem[dim]:=elemN;
 end;
+
+procedure vector.setElem(elemN: integer; pos: integer);
+begin
+   if(pos<=dim) then
+   begin
+     elem[pos]:=elemN;
+   end;
+end;
+
+procedure vector.eliminarElem(pos: integer);
+var i:integer;
+begin
+  for i:=1 to (dim-1) do
+  begin
+    elem[i]:=elem[i+1];
+  end;
+  dim:=dim-1
+end;
+
 
 end.
 
