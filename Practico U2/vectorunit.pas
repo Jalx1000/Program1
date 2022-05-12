@@ -56,7 +56,7 @@ var i:integer;
 begin
   	 dimTeclado:=InputBox('Introducir dim','','');
      dim:=StrToInt(dimTeclado);
-     for i:=0 to dim do
+     for i:=1 to dim do
      begin
        elemTeclado:=InputBox('Introducir elem: ' + IntToStr(i),'','');
        elem[i]:=StrToInt(elemTeclado);

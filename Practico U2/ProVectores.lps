@@ -21,9 +21,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FormVectoresUnit"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="22"/>
-        <CursorPos X="10" Y="51"/>
+        <TopLine Value="26"/>
+        <CursorPos X="24" Y="53"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -32,14 +31,15 @@
         <Filename Value="vectorunit.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="VectorUnit"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="56"/>
-        <CursorPos X="13" Y="88"/>
+        <TopLine Value="41"/>
+        <CursorPos X="14" Y="59"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="formvectoresunit.pas"/>
       </Position>
@@ -54,10 +54,6 @@
       <Position>
         <Filename Value="vectorunit.pas"/>
         <Caret Line="16" Column="14"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="22" Column="28" TopLine="24"/>
       </Position>
       <Position>
         <Filename Value="vectorunit.pas"/>

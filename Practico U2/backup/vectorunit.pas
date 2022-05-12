@@ -37,7 +37,7 @@ begin
   begin
     elem[i]:=0;
   end;
-  dim:=0;
+  dim:=1;
 end;
 
 function vector.getDim: integer;
@@ -74,13 +74,18 @@ procedure vector.setElem(elemN: integer; pos: integer);
 begin
    if(pos<=dim) then
    begin
-     elem[pos]:elemN;
+     elem[pos]:=elemN;
    end;
 end;
 
 procedure vector.eliminarElem(pos: integer);
+var i:integer;
 begin
-
+  for i:=1 to (dim-1) do
+  begin
+    elem[i]:=elem[i+1];
+  end;
+  dim:=dim-1
 end;
 
 

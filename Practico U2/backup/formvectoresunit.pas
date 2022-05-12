@@ -48,9 +48,9 @@ var dim,i:integer;
 begin
  dim:=v.getDim();
  StringGrid1.ColCount:=dim;
- for i:=i to dim do
+ for i:=1 to dim do
  begin
-   StringGrid1.cells[i-1,0]:=IntToStr(v.getElem(i));
+   StringGrid1.cells[i+1,0]:=IntToStr(v.getElem(i));
  end;
 end;
 
