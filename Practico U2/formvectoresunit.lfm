@@ -1,15 +1,16 @@
 object Form1: TForm1
-  Left = 298
-  Height = 165
-  Top = 0
-  Width = 336
+  Left = 381
+  Height = 175
+  Top = 3
+  Width = 249
   Caption = 'Form1'
-  ClientHeight = 165
-  ClientWidth = 336
+  ClientHeight = 155
+  ClientWidth = 249
+  Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.2.0.4'
   object Cargar: TButton
-    Left = 24
+    Left = 16
     Height = 25
     Top = 112
     Width = 75
@@ -18,7 +19,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Mostrar: TButton
-    Left = 197
+    Left = 168
     Height = 25
     Top = 112
     Width = 75
@@ -27,11 +28,20 @@ object Form1: TForm1
     TabOrder = 1
   end
   object StringGrid1: TStringGrid
-    Left = 24
+    Left = 1
     Height = 100
     Top = 8
     Width = 248
     RowCount = 1
     TabOrder = 2
+  end
+  object MainMenu1: TMainMenu
+    object MenuItem1: TMenuItem
+      Caption = 'MenuItem1'
+      object MenuItem2: TMenuItem
+        Caption = 'Borrar Primos'
+        OnClick = MenuItem2Click
+      end
+    end
   end
 end

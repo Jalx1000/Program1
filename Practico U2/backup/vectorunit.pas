@@ -13,8 +13,10 @@ type
 
   vector = class
   private
-	  dim : integer; //DIMENSION DEL VECTOR
+    dim : integer; //DIMENSION DEL VECTOR
     elem : array [1..MAX_ELE] of integer; //TODO EL VECTOR //VECTOR ES SOLO DE ENTEROS
+    function esEnteroPrimo(num:integer):boolean;
+
   public
 	  constructor crear;
     function getDim():integer;
@@ -24,11 +26,30 @@ type
     procedure insertarElem(elemN:integer);//pone un elemento en la ultima posicion
     procedure setElem(elemN:integer;pos:integer);
     procedure eliminarElem(pos:integer);
-	end;
+    procedure eliminarPrimos();
+  end;
 
 implementation
 
 { vector }
+
+function vector.esEnteroPrimo(num: integer): boolean;
+var i,c:integer;
+    b:boolean;
+begin
+  b:=false;
+  for i:=1 to num do
+  begin
+    if(num mod i=0)then
+    begin
+      c:=c+1;
+    end;
+  end;
+  if(c>=1)then
+    b:true;
+
+  Result:=b;
+end;
 
 constructor vector.crear;
 var i:integer;
@@ -37,7 +58,7 @@ begin
   begin
     elem[i]:=0;
   end;
-  dim:=1;
+  dim:=0;
 end;
 
 function vector.getDim: integer;
@@ -56,7 +77,7 @@ var i:integer;
 begin
   	 dimTeclado:=InputBox('Introducir dim','','');
      dim:=StrToInt(dimTeclado);
-     for i:=0 to dim do
+     for i:=1 to dim do
      begin
        elemTeclado:=InputBox('Introducir elem: ' + IntToStr(i),'','');
        elem[i]:=StrToInt(elemTeclado);
@@ -86,6 +107,18 @@ begin
     elem[i]:=elem[i+1];
   end;
   dim:=dim-1
+end;
+
+procedure vector.eliminarPrimos;
+var i:integer;
+begin
+  for i:=1 to dim do
+  begin
+    if(esEnteroPrimo(elem[i])) then
+    begin
+      eliminarElem(i);
+    end;
+  end;
 end;
 
 

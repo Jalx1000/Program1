@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="formvectoresunit.pas"/>
@@ -21,9 +21,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FormVectoresUnit"/>
-        <TopLine Value="26"/>
-        <CursorPos X="24" Y="53"/>
-        <UsageCount Value="21"/>
+        <CursorPos X="2" Y="59"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,44 +32,13 @@
         <UnitName Value="VectorUnit"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="23"/>
-        <CursorPos X="9" Y="40"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="25"/>
+        <CursorPos X="10" Y="41"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="34" Column="3"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="35" Column="3"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="16" Column="14"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="64" Column="10" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="24" Column="15" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="63" Column="3" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="24" Column="15" TopLine="6"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="formvectoresunit.pas"/>
         <Caret Line="36" Column="17" TopLine="4"/>
@@ -154,6 +122,42 @@
       <Position>
         <Filename Value="formvectoresunit.pas"/>
         <Caret Line="53" Column="15" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="27" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="18" Column="49" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="54" Column="24" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="55" Column="24" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="56" Column="24" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="63" Column="24" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="53" Column="20" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="59" Column="2"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="40" Column="6" TopLine="21"/>
       </Position>
     </JumpHistory>
     <RunParams>
