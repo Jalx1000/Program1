@@ -16,12 +16,16 @@ type
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
     Mostrar: TButton;
     Cargar: TButton;
     StringGrid1: TStringGrid;
     procedure CargarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure MostrarClick(Sender: TObject);
   private
 
@@ -51,6 +55,18 @@ end;
 procedure TForm1.MenuItem2Click(Sender: TObject);
 begin
   v.eliminarPrimos();
+end;
+
+procedure TForm1.MenuItem3Click(Sender: TObject);
+begin
+  v.eliminarRep();
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
+var elemModa:integer;
+begin
+		 elemModa:=v.getElemModa();
+     ShowMessage('El elemento moda es: '+IntToStr(elemModa));
 end;
 
 procedure TForm1.MostrarClick(Sender: TObject);
