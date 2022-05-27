@@ -29,6 +29,7 @@ type
     procedure eliminarElem(pos:integer);
     procedure eliminarPrimos();
     procedure eliminarRep();
+    procedure fusionOrdenada(a:vector;b:vector);
   end;
 
 implementation
@@ -175,6 +176,51 @@ begin
 	end;
 end;
 
-
+procedure vector.fusionOrdenada(a: vector; b: vector);
+var dimF,jF,i,j,elemA,elemB:integer;
+    b:boolean;
+begin
+  b:=true; //True = A  B=False
+//  jF:=1;	 //Tamaño de la fusion
+  if((a.getElem(1)>=b.getElem(1))) then
+    begin
+      insertarElem(a.getElem(1));
+      i:=2;
+      j:=1;
+    end else
+    begin
+      insertarElem(b.getElem(1));
+      i:=1;
+      j:=2;
+    end;
+  dimF:=a.getDim()+b.getDim();
+  while (dim<=dimF) do
+  begin
+  		 elemA:=a.getElem(i);
+       elemB:=b.getElem(j);
+       if(b==true)then
+         begin
+           if(i<=a.getDim())then
+             begin
+               if((elemA>=elem[dim]) and (elemA<elemB))then
+                 insertarElem(elemA);
+               	 i:=i+1;
+             end;
+           b:=false;
+         end else
+         		 begin
+               //caso recorrer B
+                  if(j<=b.getDim())then
+                    begin
+                      if((elemB>=elem[dim]) and (elemB<elemA)) then
+                        begin
+                      	  insertarElem(elemB);
+                      	  j:=j+1;
+                    		end;
+                  	end;
+             end;
+               b:=true;
+    end;
+  end;
 end.
 

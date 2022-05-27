@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = 654
+  Left = 648
   Height = 195
   Top = 0
   Width = 308
@@ -45,6 +45,10 @@ object Form1: TForm1
       object MenuItem3: TMenuItem
         Caption = 'Borrar Repetidos'
         OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Elem Moda'
+        OnClick = MenuItem4Click
       end
     end
   end
