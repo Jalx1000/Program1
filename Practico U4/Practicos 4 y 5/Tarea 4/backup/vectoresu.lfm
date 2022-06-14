@@ -1,0 +1,131 @@
+object Form1: TForm1
+  Left = 61
+  Height = 289
+  Top = 159
+  Width = 506
+  Caption = 'Form1'
+  ClientHeight = 269
+  ClientWidth = 506
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object VectorBox: TStringGrid
+    Left = 56
+    Height = 40
+    Top = 48
+    Width = 392
+    RowCount = 1
+    TabOrder = 0
+  end
+  object Cargar: TButton
+    Left = 96
+    Height = 32
+    Top = 176
+    Width = 91
+    Caption = 'Cargar'
+    OnClick = CargarClick
+    TabOrder = 1
+  end
+  object Descargar: TButton
+    Left = 288
+    Height = 33
+    Top = 175
+    Width = 88
+    Caption = 'Descargar'
+    OnClick = DescargarClick
+    TabOrder = 2
+  end
+  object vectorboxaux: TStringGrid
+    Left = 56
+    Height = 36
+    Top = 104
+    Width = 392
+    RowCount = 1
+    TabOrder = 3
+    Visible = False
+  end
+  object MainMenu1: TMainMenu
+    object Practico: TMenuItem
+      Caption = 'Ejercicios'
+      object EliminarElem: TMenuItem
+        Caption = 'EliminarElem'
+        OnClick = EliminarElemClick
+      end
+      object Ordenar: TMenuItem
+        Caption = 'Ordenar'
+        OnClick = OrdenarClick
+      end
+      object CortesDesordenado: TMenuItem
+        Caption = 'Cortes Desordenado (Practico EJ1)'
+        OnClick = CortesDesordenadoClick
+      end
+      object ElimRep: TMenuItem
+        Caption = 'Eliminar repetidos'
+        OnClick = ElimRepClick
+      end
+      object CortOrd: TMenuItem
+        Caption = 'Cordes Ordenados (Aplicacion EJ1) Y  (Practico EJ2)'
+        OnClick = CortOrdClick
+      end
+      object CortesRep: TMenuItem
+        Caption = 'Vectores de un corte de control'
+        OnClick = CortesRepClick
+      end
+      object Frecuencia: TMenuItem
+        Caption = 'Frecuencia de cortes  (Practico EJ3)'
+        OnClick = FrecuenciaClick
+      end
+      object Mezclar: TMenuItem
+        Caption = 'Mezclar 2 vectores ascendentes  (Practico EJ4)'
+        OnClick = MezclarClick
+      end
+      object OrdenarDes: TMenuItem
+        Caption = 'Ordenar Descendetemente'
+        OnClick = OrdenarDesClick
+      end
+      object MezclarAsc: TMenuItem
+        Caption = 'Mezclar 2 vectores descentens  (Practico EJ5)'
+        OnClick = MezclarAscClick
+      end
+      object Mezclar3: TMenuItem
+        Caption = 'Mezclar 3 vec ordenadamente  (Practico EJ6)'
+        OnClick = Mezclar3Click
+      end
+      object Separar: TMenuItem
+        Caption = 'Separar Primos y no Primos  (Practico EJ7)'
+        OnClick = SepararClick
+      end
+      object primos: TMenuItem
+        Caption = 'primos'
+        OnClick = primosClick
+      end
+      object Multiplos: TMenuItem
+        Caption = 'Multiplos  (Practico EJ8)'
+        OnClick = MultiplosClick
+      end
+      object purga: TMenuItem
+        Caption = 'Purga ordenada   (Practico EJ9)'
+        OnClick = purgaClick
+      end
+      object VectoresCortes: TMenuItem
+        Caption = 'Vectores hasta un corte (Aplicacion Ej2)'
+        OnClick = VectoresCortesClick
+      end
+      object DividirVectorPorCorte: TMenuItem
+        Caption = 'Dividir vectores por cortes  (Practico EJ10)'
+        OnClick = DividirVectorPorCorteClick
+      end
+      object DivVec: TMenuItem
+        Caption = 'Separar vector en par e impar (Aplicacion EJ3)'
+        OnClick = DivVecClick
+      end
+      object Intercalar2vectores: TMenuItem
+        Caption = 'Intercalar 2 vectores (Aplicacion EJ4)'
+        OnClick = Intercalar2vectoresClick
+      end
+      object PurgarUsandoCC: TMenuItem
+        Caption = 'Purgar Usando Corte de Control (Aplicacion EJ5)'
+        OnClick = PurgarUsandoCCClick
+      end
+    end
+  end
+end

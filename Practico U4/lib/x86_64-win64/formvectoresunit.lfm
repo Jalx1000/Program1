@@ -1,14 +1,14 @@
 object Form1: TForm1
-  Left = 521
+  Left = 232
   Height = 195
-  Top = 1
+  Top = 204
   Width = 308
   Caption = 'Form1'
   ClientHeight = 175
   ClientWidth = 308
   Menu = MainMenu1
   OnCreate = FormCreate
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '2.2.0.4'
   object Cargar: TButton
     Left = 32
     Height = 25
@@ -30,7 +30,7 @@ object Form1: TForm1
   object StringGrid1: TStringGrid
     Left = 8
     Height = 36
-    Top = 16
+    Top = 24
     Width = 296
     ColCount = 1
     DefaultColWidth = 30
@@ -58,6 +58,14 @@ object Form1: TForm1
       object MenuItem4: TMenuItem
         Caption = 'Frecuencia CC'
         OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Mezcla Acendente'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Mezcla Decendente'
+        OnClick = MenuItem6Click
       end
     end
   end

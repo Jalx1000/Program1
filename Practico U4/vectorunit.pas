@@ -27,6 +27,9 @@ type
     procedure eliminarElem(pos:integer);
     function corteControlC():integer;
     function frecuenciaCC():integer;
+    procedure fusionAcendente(a,b:vector);
+    procedure fusionDecendente(a,b:vector);
+    procedure ordenarVectores();
   end;
 
 implementation
@@ -136,7 +139,13 @@ begin
   begin
     if elem[i]<>elem[i+1] then
           begin
-
+							 if(elem[i]=elem[i+1])then
+                 begin
+                   fcc:=1;
+                 end else
+                 begin
+                   fcc:=fcc-1;
+                 end;
           end else
           begin
             fcc:=fcc+1;
@@ -144,6 +153,50 @@ begin
     i:=i+1;
   end;
   Result:=fcc;
+end;
+
+procedure vector.fusionAcendente(a,b:vector);
+var dimA,dimB,dimTotal,i,ia,ib:integer;
+begin
+ // a.ordenarVectores();
+ // b.ordenarVectores();
+  dimA:=a.getDim();
+  dimB:=b.getDim();
+  dimTotal:=dimA+dimB;
+	i:=1;
+  ia:=1;
+  ib:=1;
+  while (i<dimTotal) do
+  begin
+    if((b.getElem(ib)<=a.getElem(iA)) and (Ib<dimB) ) then
+      begin
+       self.insertarElem(b.getElem(ib));
+       ib:=ib+1;
+      end else
+      begin
+ 			  self.insertarElem(a.getElem(ia));
+        ia:=ia+1;
+      end;
+    i:=i+1;
+  end;
+end;
+procedure vector.fusionDecendente(a, b: vector);
+begin
+
+end;
+
+procedure vector.ordenarVectores;
+var posi,aux,j:integer;
+begin
+   for posi:=1 to dim do begin
+   for j:=posi+1 to dim do begin
+    if elem[j]<elem[posi] then begin
+      aux:=elem[posi];
+      elem[posi]:=elem[j];
+      elem[j]:=aux;
+    end;
+   end;
+  end;
 end;
 
 end.

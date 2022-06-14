@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="49"/>
       </Unit>
       <Unit>
         <Filename Value="formvectoresunit.pas"/>
@@ -21,120 +21,49 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FormVectoresUnit"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="39"/>
-        <CursorPos X="36" Y="62"/>
-        <UsageCount Value="39"/>
+        <TopLine Value="61"/>
+        <CursorPos X="3" Y="88"/>
+        <UsageCount Value="49"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="vectorunit.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="VectorUnit"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="114"/>
-        <CursorPos X="9" Y="134"/>
-        <UsageCount Value="39"/>
+        <TopLine Value="132"/>
+        <CursorPos X="5" Y="185"/>
+        <FoldState Value=" T3c08921@"/>
+        <UsageCount Value="49"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 4\vectoresu.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="VectoresU"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="214"/>
+        <CursorPos X="18" Y="223"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 4\vectoresuu.pas"/>
+        <UnitName Value="VectoresUU"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="331"/>
+        <CursorPos X="33" Y="43"/>
+        <FoldState Value=" T3iU0812514 pjFmI05012 pick30H5]K0jR0O4="/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="30" Column="29" TopLine="10"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="154" Column="16" TopLine="131"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="23" Column="44" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="59" Column="2" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="66" Column="2" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="82" Column="13" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="70" Column="36" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="76" Column="16" TopLine="57"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="24" Column="36" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="60" Column="17" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="62" Column="17" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="69" Column="42" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="32" Column="49" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="181" Column="21" TopLine="151"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="184" Column="9" TopLine="156"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="195" Column="35" TopLine="174"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="205" Column="27" TopLine="187"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="64" Column="37" TopLine="48"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="63" Column="37" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="62" Column="10"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="25" Column="43" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="vectorunit.pas"/>
-        <Caret Line="28" Column="38" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="26" Column="46" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="formvectoresunit.pas"/>
-        <Caret Line="27" Column="46" TopLine="12"/>
-      </Position>
       <Position>
         <Filename Value="formvectoresunit.pas"/>
         <Caret Line="55" Column="20" TopLine="37"/>
@@ -158,6 +87,102 @@
       <Position>
         <Filename Value="formvectoresunit.pas"/>
         <Caret Line="57" Column="15" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="62" Column="36" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="73" Column="4" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="74" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="30" Column="50" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="76" Column="7" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="83" Column="7" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="68" Column="6" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="71" Column="5" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="73" Column="3" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="82" Column="40" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="71" Column="12" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="70" Column="12" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="75" Column="26" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="157" Column="25" TopLine="134"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="169" Column="9" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 4\vectoresuu.pas"/>
+        <Caret Line="290" Column="27" TopLine="268"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="31" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="182" Column="24" TopLine="159"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="160" Column="15" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="70" Column="3" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="72" Column="3" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="formvectoresunit.pas"/>
+        <Caret Line="75" Column="20" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="vectorunit.pas"/>
+        <Caret Line="33" Column="44" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 4\vectoresu.pas"/>
+        <Caret Line="47" Column="26" TopLine="93"/>
       </Position>
     </JumpHistory>
     <RunParams>
