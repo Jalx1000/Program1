@@ -21,6 +21,7 @@ type
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
     Mostrar: TButton;
     Cargar: TButton;
     StringGrid1: TStringGrid;
@@ -30,6 +31,7 @@ type
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
     procedure MostrarClick(Sender: TObject);
   private
 
@@ -69,9 +71,9 @@ end;
 procedure TForm1.MenuItem5Click(Sender: TObject);
 var a,b:vector;
 begin
-  v:=vector.Create;
-  a:=vector.Create;
-  b:=vector.Create;
+  v:=vector.crear;
+  a:=vector.crear;
+  b:=vector.crear;
   a.cargarElem();
   b.cargarElem();
   v.fusionAcendente(a,b);
@@ -80,12 +82,26 @@ end;
 procedure TForm1.MenuItem6Click(Sender: TObject);
 var a,b:vector;
 begin
-  v:=vector.Create;
-  a:=vector.Create;
-  b:=vector.Create;
+  v:=vector.crear;
+  a:=vector.crear;
+  b:=vector.crear;
   a.cargarElem();
   b.cargarElem();
+  v.fusionDecendente(a,b);
+  v.ordenarVectoresDes();
+end;
 
+procedure TForm1.MenuItem7Click(Sender: TObject);
+var a,b,c:vector;
+begin
+		 v:=vector.crear;
+     a:=vector.crear;
+     b:=vector.crear;
+     c:=vector.crear;
+     a.cargarElem();
+     b.cargarElem();
+     c.cargarElem();
+		 v.mezclar3vectoresAs(a,b,c);
 end;
 
 procedure TForm1.MostrarClick(Sender: TObject);

@@ -29,7 +29,9 @@ type
     function frecuenciaCC():integer;
     procedure fusionAcendente(a,b:vector);
     procedure fusionDecendente(a,b:vector);
+    procedure mezclar3vectoresAs(a,b,c:vector);
     procedure ordenarVectores();
+    procedure ordenarVectoresDes();
   end;
 
 implementation
@@ -37,12 +39,12 @@ implementation
 { vector }
 
 constructor vector.crear;
-var i:integer;
+var posi:integer;
 begin
-  for i:=1 to MAX_ELE do
-  begin
-    elem[i]:=0;
+  for posi:=1 to 1000 do begin
+    elem[posi]:=999999;
   end;
+
   dim:=0;
 end;
 function vector.getDim: integer;
@@ -156,33 +158,109 @@ begin
 end;
 
 procedure vector.fusionAcendente(a,b:vector);
-var dimA,dimB,dimTotal,i,ia,ib:integer;
+var dima,dimb,dimtotal,i,ia,ib:integer;
 begin
- // a.ordenarVectores();
- // b.ordenarVectores();
-  dimA:=a.getDim();
-  dimB:=b.getDim();
-  dimTotal:=dimA+dimB;
+  a.ordenarVectores();
+  b.ordenarVectores();
+
+  dima:=a.getDim();
+  dimb:=b.getDim();
+  dimtotal:=dima+dimb;
+
 	i:=1;
   ia:=1;
   ib:=1;
-  while (i<dimTotal) do
-  begin
-    if((b.getElem(ib)<=a.getElem(iA)) and (Ib<dimB) ) then
-      begin
+
+  while i<=dimtotal do begin
+
+    if (b.getElem(ib)<=a.getElem(ia)) and (ib<=dimb)  then begin
        self.insertarElem(b.getElem(ib));
        ib:=ib+1;
-      end else
-      begin
+
+      end else if (b.getElem(ib)>=a.getElem(ia)) and (ia<=dima) then begin
  			  self.insertarElem(a.getElem(ia));
         ia:=ia+1;
       end;
     i:=i+1;
+
   end;
+
 end;
 procedure vector.fusionDecendente(a, b: vector);
+var dima,dimb,dimTotal,ia,ib,i:integer;
 begin
-dima
+		 a.ordenarVectoresDes();
+     b.ordenarVectoresDes();
+
+     dima:=a.getDim();
+     dimb:=b.getDim();
+     dimTotal:=dima+dimb;
+
+     i:=1;
+     ia:=dima;
+     ib:=dimb;
+
+     while i<=dimtotal do begin
+  if (b.getelem(ib) <= a.getelem(ia)) and (ib>=1) then begin
+    self.insertarelem(b.getelem(ib));
+    ib:=ib-1;
+    if ib=0 then begin
+     ib:=999;
+    end;
+  end else if (b.getelem(ib)>=a.getelem(ia)) and (ia>=1) then begin
+
+  self.insertarelem(a.getelem(ia));
+    ia:=ia-1;
+
+    if ia=0 then begin
+     ia:=999;
+    end;
+
+  end;
+  i:=i+1;
+ end;
+end;
+
+procedure vector.mezclar3vectoresAs(a, b, c: vector);
+var ia,ib,ic:integer;
+begin
+ia:=1;
+ib:=1;
+ic:=1;
+
+			while ( (ia<=a.getDim()) or (ib<=b.getDim()) or (ic<=c.getDim())) do
+			  begin
+          if (ia<=a.getDim()) then
+            begin
+						   if ( ( (a.getelem(ia)<=b.getelem(ib) )or not (ib<=b.getdim() ))
+                  and (a.getElem(ia)<=c.getelem(ic)) or not (ic<=c.getdim() )) then
+                 begin
+                  insertarElem(a.getElem(ia));
+                  ia:=ia+1;
+                 end;
+            end;
+
+          if (ib<=b.getDim()) then
+            begin
+             if ( ( (b.getelem(ib)<=a.getelem(ia) )or not (ia<=a.getdim() ))
+			       	  and (b.getElem(ib)<=c.getelem(ic)) or not (ic<=c.getdim() )) then
+               insertarElem(b.getElem(ib));
+             	 ib:=ib+1;
+            end;
+
+          if ( ic<= c.getDim() ) then
+            begin
+             if ( ( (c.getelem(ic)<=a.getelem(ia) )or not (ia<=a.getdim() ))
+			       	  and (c.getElem(ic)<=c.getelem(ib)) or not (ib<=b.getdim() )) then
+               begin
+						   insertarElem(b.getElem(ic));
+             	 ic:=ic+1;
+               end;
+            end;
+
+        end;
+
+
 end;
 
 procedure vector.ordenarVectores;
@@ -197,6 +275,19 @@ begin
     end;
    end;
   end;
+end;
+procedure vector.ordenarVectoresDes;
+var posi,j,aux:integer;
+begin
+   for posi:=1 to dim do begin
+     for j:=posi+1 to dim do begin
+      if(elem[j]>elem[posi]) then begin
+        aux:=elem[posi];
+        elem[posi]:=elem[j];
+        elem[j]:=aux;
+      end;
+     end;
+   end;
 end;
 
 end.
