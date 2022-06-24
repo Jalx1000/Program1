@@ -22,9 +22,11 @@ type
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
     Mostrar: TButton;
     Cargar: TButton;
     StringGrid1: TStringGrid;
+    StringGrid2: TStringGrid;
     procedure CargarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -32,11 +34,13 @@ type
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
+    procedure MenuItem8Click(Sender: TObject);
     procedure MostrarClick(Sender: TObject);
   private
 
   public
      v:vector;
+     y:vector;
   end;
 
 var
@@ -101,7 +105,18 @@ begin
      a.cargarElem();
      b.cargarElem();
      c.cargarElem();
-		 v.
+		 v.mezclar3vectoresAs(a,b,c);
+end;
+
+procedure TForm1.MenuItem8Click(Sender: TObject);
+var a:vector;
+begin
+ 		 y:=vector.create;
+     v:=vector.create;
+     a:=vector.create;
+     a.cargarElem();
+     StringGrid2.Visible:=true;
+     v.primosNOprimos(a,y);
 end;
 
 procedure TForm1.MostrarClick(Sender: TObject);

@@ -48,6 +48,7 @@ type
     procedure DivVecClick(Sender: TObject);
     procedure EliminarElemClick(Sender: TObject);
     procedure ElimRepClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure FrecuenciaClick(Sender: TObject);
     procedure Intercalar2vectoresClick(Sender: TObject);
     procedure PurgarUsandoCCClick(Sender: TObject);
@@ -161,6 +162,11 @@ end;
 
 procedure TForm1.ElimRepClick(Sender: TObject);
 begin
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.FrecuenciaClick(Sender: TObject);

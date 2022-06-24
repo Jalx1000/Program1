@@ -33,8 +33,8 @@
         <UnitName Value="VectoresUU"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="163"/>
-        <CursorPos X="17" Y="34"/>
+        <TopLine Value="228"/>
+        <CursorPos X="32" Y="158"/>
         <UsageCount Value="82"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -54,7 +54,7 @@
         <UsageCount Value="5"/>
       </Unit4>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="vectoresu.pas"/>
         <Caret Line="98" TopLine="92"/>
@@ -157,24 +157,16 @@
       </Position25>
       <Position26>
         <Filename Value="vectoresu.pas"/>
-        <Caret Line="169" Column="18" TopLine="177"/>
+        <Caret Line="231" Column="3" TopLine="226"/>
       </Position26>
       <Position27>
         <Filename Value="vectoresu.pas"/>
-        <Caret Line="231" Column="3" TopLine="226"/>
+        <Caret Line="244" Column="3" TopLine="226"/>
       </Position27>
       <Position28>
-        <Filename Value="vectoresu.pas"/>
-        <Caret Line="244" Column="3" TopLine="226"/>
-      </Position28>
-      <Position29>
         <Filename Value="vectoresuu.pas"/>
         <Caret Line="41" Column="22" TopLine="25"/>
-      </Position29>
-      <Position30>
-        <Filename Value="vectoresuu.pas"/>
-        <Caret Line="43" Column="31" TopLine="270"/>
-      </Position30>
+      </Position28>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

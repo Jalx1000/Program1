@@ -32,6 +32,8 @@ type
     procedure mezclar3vectoresAs(a,b,c:vector);
     procedure ordenarVectores();
     procedure ordenarVectoresDes();
+    procedure primosNOprimos(a,b:vector);
+    function esPrimo(num:integer):boolean;
   end;
 
 implementation
@@ -288,6 +290,43 @@ begin
       end;
      end;
    end;
+end;
+
+procedure vector.primosNOprimos(a, b: vector);
+var dima,primos,i:integer;
+begin
+dima:=a.getDim();
+primos:=0;
+
+   for i:=1 to dima do begin
+  primos:=a.getelem(i);
+   if a.esprimo(primos) then begin
+      self.insertarelem(a.getelem(i));
+   end else begin
+      b.insertarelem(a.getelem(i));
+ end;
+end;
+end;
+function vector.esPrimo(num: integer): boolean;
+var c,i:integer;
+begin
+c:=0;
+
+  for i:=1 to num do
+      begin
+       		 if num mod i  = 0 then
+             begin
+              c:=c+1;
+             end;
+      end;
+
+   if c=2 then begin
+  result:=true;
+  end else begin
+   result:=false;
+  end;
+
+
 end;
 
 end.
