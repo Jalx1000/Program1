@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = -6
+  Left = -7
   Height = 561
   Top = 4
   Width = 631
@@ -20,7 +20,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 24
+    Left = 40
     Height = 25
     Top = 184
     Width = 75
@@ -29,9 +29,9 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Button2: TButton
-    Left = 173
+    Left = 160
     Height = 25
-    Top = 186
+    Top = 184
     Width = 75
     Caption = 'Mostrar'
     OnClick = Button2Click
@@ -49,7 +49,7 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Button3: TButton
-    Left = 368
+    Left = 384
     Height = 25
     Top = 184
     Width = 75
@@ -58,7 +58,7 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Button4: TButton
-    Left = 517
+    Left = 504
     Height = 25
     Top = 184
     Width = 75
@@ -67,12 +67,93 @@ object Form1: TForm1
     TabOrder = 5
   end
   object Button5: TButton
-    Left = 272
+    Left = 264
     Height = 25
-    Top = 32
-    Width = 75
+    Top = 184
+    Width = 91
     Caption = 'Suma'
     OnClick = Button5Click
     TabOrder = 6
+  end
+  object Button6: TButton
+    Left = 264
+    Height = 25
+    Top = 216
+    Width = 91
+    Caption = 'Multiplicacion'
+    OnClick = Button6Click
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 264
+    Height = 25
+    Top = 248
+    Width = 91
+    Caption = 'Promedio TID'
+    OnClick = Button7Click
+    TabOrder = 8
+  end
+  object Edit1: TEdit
+    Left = 264
+    Height = 23
+    Top = 56
+    Width = 88
+    TabOrder = 9
+    Text = 'Edit1'
+  end
+  object Button8: TButton
+    Left = 264
+    Height = 25
+    Top = 279
+    Width = 88
+    Caption = 'Promedio TSI'
+    OnClick = Button8Click
+    TabOrder = 10
+  end
+  object Button9: TButton
+    Left = 264
+    Height = 25
+    Top = 312
+    Width = 88
+    Caption = 'Suma Columna'
+    OnClick = Button9Click
+    TabOrder = 11
+  end
+  object Button10: TButton
+    Left = 264
+    Height = 25
+    Top = 344
+    Width = 91
+    Cancel = True
+    Caption = 'Suma Fila'
+    OnClick = Button10Click
+    TabOrder = 12
+  end
+  object Button11: TButton
+    Left = 264
+    Height = 25
+    Top = 376
+    Width = 91
+    Caption = 'Promedio M,F,C'
+    OnClick = Button11Click
+    TabOrder = 13
+  end
+  object Button12: TButton
+    Left = 264
+    Height = 25
+    Top = 408
+    Width = 88
+    Caption = 'B. Repetitivo'
+    OnClick = Button12Click
+    TabOrder = 14
+  end
+  object Button13: TButton
+    Left = 264
+    Height = 25
+    Top = 440
+    Width = 88
+    Caption = 'Cargar Vector'
+    OnClick = Button13Click
+    TabOrder = 15
   end
 end
