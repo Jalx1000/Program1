@@ -24,13 +24,6 @@ type
     FijarColumna: TButton;
     FijarElem: TButton;
     Fila1: TEdit;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
     MainMenu1: TMainMenu;
     Ejercicios: TMenuItem;
     Ej6: TMenuItem;
@@ -60,7 +53,6 @@ type
     Fila: TEdit;
     Colum: TEdit;
     Elem: TEdit;
-    Label1: TLabel;
     MatrizBox: TStringGrid;
     MatrizBox1: TStringGrid;
     procedure BuscarRepClick(Sender: TObject);

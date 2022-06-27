@@ -229,10 +229,7 @@ begin
  fila:=1;
 
     for Columna:=cols-1 downto 1 do begin
-
      while fila<=fils-1 do begin
-
-
       if fila>=1 then begin
           for a:=fila downto 1 do begin
              r:=r+elem[a,columna];
@@ -240,12 +237,8 @@ begin
           end;
       fila:=fila+1;
        break;
-
       end;
-
-
     end;
-
   end;
 
 
@@ -839,7 +832,8 @@ begin
 end;
 
 procedure matriz.transpuesta();
-var copia:array[1..100,1..100]of integer;
+var
+     copia:array[1..100,1..100]of integer;
      fila,columna:integeR;
 begin
 for fila:=1 to fils do begin

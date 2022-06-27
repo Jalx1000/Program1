@@ -1,14 +1,14 @@
 object Form1: TForm1
-  Left = 711
-  Height = 549
-  Top = 189
+  Left = 34
+  Height = 616
+  Top = 347
   Width = 819
   Caption = 'Form1'
-  ClientHeight = 529
+  ClientHeight = 596
   ClientWidth = 819
   Menu = MainMenu1
   OnCreate = FormCreate
-  LCLVersion = '2.0.12.0'
+  LCLVersion = '2.2.0.4'
   object Label1: TLabel
     Left = 176
     Height = 32
@@ -22,7 +22,6 @@ object Form1: TForm1
     Font.Name = 'Britannic Bold'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object MatrizBox: TStringGrid
@@ -119,7 +118,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object Label3: TLabel
@@ -135,7 +133,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object Label4: TLabel
@@ -151,7 +148,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object MatrizBox1: TStringGrid
@@ -190,7 +186,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object Colum1: TEdit
@@ -217,7 +212,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object Elem1: TEdit
@@ -244,7 +238,6 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    ParentColor = False
     ParentFont = False
   end
   object Label8: TLabel
@@ -260,7 +253,6 @@ object Form1: TForm1
     Font.Name = 'Britannic Bold'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    ParentColor = False
     ParentFont = False
   end
   object Crear1: TButton
