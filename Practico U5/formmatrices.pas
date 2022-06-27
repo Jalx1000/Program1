@@ -18,6 +18,8 @@ type
     Button11: TButton;
     Button12: TButton;
     Button13: TButton;
+    Button14: TButton;
+    Button15: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
@@ -33,6 +35,8 @@ type
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
     procedure Button13Click(Sender: TObject);
+    procedure Button14Click(Sender: TObject);
+    procedure Button15Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -100,6 +104,18 @@ end;
 procedure TForm1.Button13Click(Sender: TObject);
 begin
   m.cargarMatrizVector(m2);
+end;
+
+procedure TForm1.Button14Click(Sender: TObject);
+begin
+  m.MTranspuesta();
+  descargar();
+end;
+
+procedure TForm1.Button15Click(Sender: TObject);
+begin
+  m.invertir();
+  descargar();
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);

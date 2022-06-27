@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = -7
+  Left = 323
   Height = 561
-  Top = 4
+  Top = 534
   Width = 631
   Caption = 'Form1'
   ClientHeight = 561
@@ -15,6 +15,8 @@ object Form1: TForm1
     Width = 224
     ColCount = 1
     DefaultColWidth = 30
+    FixedCols = 0
+    FixedRows = 0
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
     RowCount = 1
     TabOrder = 0
@@ -44,6 +46,8 @@ object Form1: TForm1
     Width = 224
     ColCount = 1
     DefaultColWidth = 30
+    FixedCols = 0
+    FixedRows = 0
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
     RowCount = 1
     TabOrder = 3
@@ -155,5 +159,23 @@ object Form1: TForm1
     Caption = 'Cargar Vector'
     OnClick = Button13Click
     TabOrder = 15
+  end
+  object Button14: TButton
+    Left = 267
+    Height = 25
+    Top = 88
+    Width = 88
+    Caption = 'M. Transpuesta'
+    OnClick = Button14Click
+    TabOrder = 16
+  end
+  object Button15: TButton
+    Left = 264
+    Height = 25
+    Top = 127
+    Width = 91
+    Caption = 'invertir'
+    OnClick = Button15Click
+    TabOrder = 17
   end
 end

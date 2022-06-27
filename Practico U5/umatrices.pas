@@ -42,6 +42,8 @@ type
       procedure buscarRepetitivo(a:integer);
       procedure cargarAVector();
       procedure cargarMatrizVector(m:Matriz);
+      procedure invertir();
+      procedure MTranspuesta();
     end;
 implementation
 
@@ -256,6 +258,50 @@ begin
      elem[1,columna]:=self.ElementoVector[columna];
   end;
 end;
+
+procedure Matriz.invertir();
+
+var fila,columna,filaaux:integer;
+    copia:array[1..100,1..100]of integer;
+begin
+    for fila:=1 to f do begin
+     for columna:=1 to c do begin
+      copia[fila,columna]:=self.getelem(fila,columna);
+     end;
+    end;
+
+   filaaux:=f+1;
+
+  for columna:=1 to c do begin
+   for fila:=1 to f do begin
+
+   if filaaux=1 then begin
+   filaaux:=f;
+   end else begin
+   filaaux:=filaaux-1;
+   end;
+    elem[fila,columna]:=copia[filaaux,columna];
+   end;
+  end;
+end;
+
+procedure Matriz.MTranspuesta;
+var
+     copia:array[1..100,1..100]of integer;
+     fila,columna:integer;
+begin
+for fila:=1 to f do begin
+ for columna:=1 to c do begin
+  copia[fila,columna]:=self.getelem(fila,columna);
+ end;
+end;
+ for fila:=1 to c do begin
+  for columna:=1 to f do begin
+    elem[fila,columna]:=copia[columna ,fila];
+  end;
+ end;
+end;
+
 
 
 

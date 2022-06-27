@@ -42,6 +42,8 @@ type
       procedure buscarRepetitivo(a:integer);
       procedure cargarAVector();
       procedure cargarMatrizVector(m:Matriz);
+      procedure invertir(copia:matriz);
+      procedure MTranspuesta();
     end;
 implementation
 
@@ -179,7 +181,6 @@ begin
      end;
      result:=s;
 end;
-
 function Matriz.sumaFil(fila: integer): integer;
 var i,s:integer;
 begin
@@ -188,7 +189,6 @@ begin
      end;
      Result:=s;
 end;
-
 function Matriz.promediFila(fila: integer): real;
 var i,s,n:integer;
 begin
@@ -199,7 +199,6 @@ begin
      end;
      result:=s/n;
 end;
-
 function Matriz.promedioColumna(columna: integer): real;
 var i,s,n:integer;
 begin
@@ -237,13 +236,12 @@ begin
    end;
   end;
   ShowMessage('El elemnto se repite '+IntToStr(r)+' veces');
-
 end;
 
 procedure Matriz.cargarAVector;
 var posi,dimteclado:integer;
 begin
- dim:=strtoint(inputbox('Introduzca la dimension del vector','',''));
+ dim:=strtoint(InputBox('Introduzca la dimension del vector','',''));
   //dim:=dimteclado;
 
  for posi:=1 to dim do begin
@@ -260,6 +258,50 @@ begin
      elem[1,columna]:=self.ElementoVector[columna];
   end;
 end;
+
+procedure Matriz.invertir(copia:matriz);
+
+var fila,columna,filaaux:integer;
+    //copia:array[1..100,1..100]of integer;
+begin
+    for fila:=1 to f do begin
+     for columna:=1 to c do begin
+      copia[fila,columna]:=self.getelem(fila,columna);
+     end;
+    end;
+
+   filaaux:=f+1;
+
+  for columna:=1 to c do begin
+   for fila:=1 to f do begin
+
+   if filaaux=1 then begin
+   filaaux:=f;
+   end else begin
+   filaaux:=filaaux-1;
+   end;
+    elem[fila,columna]:=copia[filaaux,columna];
+   end;
+  end;
+end;
+
+procedure Matriz.MTranspuesta;
+var
+     copia:array[1..100,1..100]of integer;
+     fila,columna:integer;
+begin
+for fila:=1 to f do begin
+ for columna:=1 to c do begin
+  copia[fila,columna]:=self.getelem(fila,columna);
+ end;
+end;
+ for fila:=1 to c do begin
+  for columna:=1 to f do begin
+    elem[fila,columna]:=invertir(copia);
+  end;
+ end;
+end;
+
 
 
 

@@ -8,9 +8,11 @@
       <Unit>
         <Filename Value="PMatriz.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="25" Y="13"/>
-        <UsageCount Value="46"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="33" Y="13"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="formmatrices.pas"/>
@@ -19,11 +21,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FormMatrices"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="85"/>
-        <CursorPos X="26" Y="102"/>
-        <FoldState Value=" T3kT0C1F"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="94"/>
+        <CursorPos X="7" Y="113"/>
+        <FoldState Value=" T3l20C1c"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="50"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,9 +34,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="UMatrices"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="230"/>
-        <CursorPos Y="246"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="272"/>
+        <CursorPos Y="288"/>
+        <UsageCount Value="50"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -55,10 +57,10 @@
       <Unit>
         <Filename Value="..\Practico U4\Practicos 4 y 5\Tarea 5\Tarea 5\matricesu.pas"/>
         <UnitName Value="MatricesU"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="521"/>
-        <CursorPos Y="540"/>
-        <UsageCount Value="18"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="755"/>
+        <CursorPos X="30" Y="757"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -67,108 +69,16 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Matricess"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="210"/>
-        <CursorPos X="3" Y="305"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="126"/>
+        <CursorPos X="9" Y="141"/>
         <ComponentState Value="1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="103" Column="19" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="43" Column="39" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="102" Column="23" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="16" Column="48" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="251" TopLine="233"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="252" Column="6" TopLine="230"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Practico U4\Practicos 4 y 5\Tarea 5\Tarea 5\matricess.pas"/>
-        <Caret Line="323" Column="29" TopLine="303"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="20" Column="3" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="256" Column="6" TopLine="235"/>
-      </Position>
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="102" Column="23" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="251" TopLine="235"/>
-      </Position>
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="102" Column="23" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="244" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="45" Column="33" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="246" TopLine="226"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="255" TopLine="226"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="158" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="17" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="103" Column="33" TopLine="94"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="258" Column="3" TopLine="230"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="260" Column="24" TopLine="231"/>
-      </Position>
-      <Position>
-        <Filename Value="formmatrices.pas"/>
-        <Caret Line="103" Column="33" TopLine="94"/>
-      </Position>
-      <Position>
-        <Filename Value="umatrices.pas"/>
-        <Caret Line="246" Column="5" TopLine="230"/>
-      </Position>
       <Position>
         <Filename Value="formmatrices.pas"/>
         <Caret Line="100" TopLine="93"/>
@@ -196,6 +106,98 @@
       <Position>
         <Filename Value="formmatrices.pas"/>
         <Caret Line="103" Column="4" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="102" Column="26" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="123" Column="7" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="127" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="151" Column="20" TopLine="126"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="72" Column="26" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="97" Column="12" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="102" Column="18" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="104" Column="18" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="41" Column="37" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="110" Column="16" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="277" Column="28" TopLine="246"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="110" Column="16" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="46" Column="25" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="270" Column="15" TopLine="248"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="278" Column="6" TopLine="246"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="277" Column="6" TopLine="246"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="45" Column="28" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="112" Column="11" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="119" Column="11" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="formmatrices.pas"/>
+        <Caret Line="118" Column="15" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="300" Column="39" TopLine="268"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="265" Column="29" TopLine="247"/>
+      </Position>
+      <Position>
+        <Filename Value="umatrices.pas"/>
+        <Caret Line="288" TopLine="272"/>
       </Position>
     </JumpHistory>
     <RunParams>
