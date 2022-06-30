@@ -5,12 +5,16 @@ unit unitFormArchivosTexto;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, UArchivoTexto;
 
 type
-  TForm1 = class(TForm)
-  private
 
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    at:texto;
   public
 
   end;
@@ -21,6 +25,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  at:=Texto.crear('ArchivoPorDefecto','txt');
+end;
 
 end.
 
