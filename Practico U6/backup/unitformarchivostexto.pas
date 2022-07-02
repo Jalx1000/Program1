@@ -50,7 +50,7 @@ procedure TForm1.MenuItem2Click(Sender: TObject);
 var at2:Texto;
 begin
      at2:=at.copiar();
-     ShowMessage('Copiado exitosamente',at2.getNombreCompleto());
+     ShowMessage('Copiado exitosamente'+at2.getNombreCompleto());
 end;
 
 procedure TForm1.ToggleBox1Change(Sender: TObject);

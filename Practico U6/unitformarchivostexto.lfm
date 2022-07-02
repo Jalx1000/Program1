@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 360
+  Left = 229
   Height = 240
-  Top = 626
+  Top = 547
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
@@ -23,6 +23,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
+    BidiMode = bdRightToLeft
     ParentBidiMode = False
     object MenuItem1: TMenuItem
       Caption = 'Practico U6'

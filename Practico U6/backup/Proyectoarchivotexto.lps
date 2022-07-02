@@ -19,7 +19,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitFormArchivosTexto"/>
-        <TopLine Value="15"/>
+        <TopLine Value="21"/>
         <CursorPos X="21" Y="57"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
@@ -32,7 +32,7 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="98"/>
-        <CursorPos X="15" Y="119"/>
+        <CursorPos Y="117"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
       </Unit>
@@ -171,4 +171,15 @@
       <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="uarchivotexto.pas"/>
+        <Line Value="117"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>
