@@ -21,9 +21,12 @@ type
       procedure cerrar();
       procedure setNombre(nombre:string);
       procedure setExt(extensionNueva:string);
+      procedure escribirLinea(lin:string);
       function getNombreCompleto():string;
       function getExt():string;
       function leerLinea():string;
+      function fin():boolean;
+      function copiar():texto;
   end;
 
 implementation
@@ -44,6 +47,7 @@ begin
      if(IOResult<>0)then begin
        writeln('Error al crear el archivo de texto: '+getNombreCompleto());
      end;
+     cerrar();
      modo:=0; //escritura
 
 end;
@@ -57,7 +61,7 @@ begin
   if (IOResult<>0)then begin
     Writeln('ERROR AL LEER/ABRIR ARCHIVO DE TEXTO: '+getNombreCompleto());
   end;
-  modo:=1; //modo:=1 siginifica lectura y modo:0 siginifica escritura
+  modo:=0; //modo:=1 siginifica lectura y modo:0 siginifica escritura
 end;
 
 procedure Texto.cerrar;
@@ -74,6 +78,11 @@ end;
 procedure Texto.setExt(extensionNueva: string);
 begin
 
+end;
+
+procedure Texto.escribirLinea(lin: string);
+begin
+  writeln(f,lin)
 end;
 
 function Texto.getNombreCompleto: string;
@@ -94,6 +103,29 @@ begin
     Result:=s;
   end;
     Result:=null;
+end;
+
+function Texto.fin: boolean;
+begin
+  Result:=EOF(f);
+end;
+
+function Texto.copiar: texto;
+var s:string;
+  copia:Texto;
+begin
+  copia:=Texto.crear('Copia','txt');//creamos el archivo donde se var a copiar
+  abrir();
+  //mientras no leyo la ultima linea(no termino de  leer todo el documento)
+  while (not fin()) do begin
+    //iremos linaea por lineal
+    s:=leerLinea();
+    copia.abrir();
+    copia.escribirLinea(s);
+  end;
+  cerrar();
+  copia.cerrar();
+  Result:=copia;
 end;
 
 end.

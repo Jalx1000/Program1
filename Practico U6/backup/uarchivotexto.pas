@@ -93,7 +93,7 @@ begin
     readln(f,s);  //LeerLinea(archivo)
     Result:=s;
   end;
-    Result:null;
+    Result:=null;
 end;
 
 end.
