@@ -47,9 +47,7 @@ begin
      if(IOResult<>0)then begin
        writeln('Error al crear el archivo de texto: '+getNombreCompleto());
      end;
-     cerrar();
-     modo:=0; //escritura
-
+     modo:=0; //lectura
 end;
 
 procedure Texto.abrir;
@@ -60,8 +58,9 @@ begin
   {$I+}
   if (IOResult<>0)then begin
     Writeln('ERROR AL LEER/ABRIR ARCHIVO DE TEXTO: '+getNombreCompleto());
+    Exit;
   end;
-  modo:=0; //modo:=1 siginifica lectura y modo:0 siginifica escritura
+  modo:=1; //modo:=1 siginifica lectura y modo:0 siginifica escritura
 end;
 
 procedure Texto.cerrar;
@@ -82,7 +81,7 @@ end;
 
 procedure Texto.escribirLinea(lin: string);
 begin
-  writeln(f,lin)
+  writeln(f,lin);
 end;
 
 function Texto.getNombreCompleto: string;
@@ -101,8 +100,9 @@ begin
   if (modo=1) then begin
     readln(f,s);  //LeerLinea(archivo)
     Result:=s;
-  end;
+  end else begin
     Result:=null;
+  end;
 end;
 
 function Texto.fin: boolean;
@@ -112,18 +112,25 @@ end;
 
 function Texto.copiar: texto;
 var s:string;
+  auxF:Array [1..1024] of string;
   copia:Texto;
+  i,j:integer;
 begin
-  copia:=Texto.crear('Copia','txt');//creamos el archivo donde se var a copiar
-  abrir();
+  //abrir();
   //mientras no leyo la ultima linea(no termino de  leer todo el documento)
+  i:=1;
   while (not fin()) do begin
     //iremos linaea por lineal
     s:=leerLinea();
-    copia.abrir();
-    copia.escribirLinea(s);
+    auxF[i]:=s;
+    i:=i+1;
   end;
   cerrar();
+  copia:=Texto.crear('Copia','txt');//creamos el archivo donde se var a copiar
+  //copia.abrir();
+  for j:=1 to i do begin
+    copia.escribirLinea(auxF[j]);
+  end;
   copia.cerrar();
   Result:=copia;
 end;

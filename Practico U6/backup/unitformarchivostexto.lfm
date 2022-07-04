@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 360
+  Left = 344
   Height = 240
-  Top = 626
+  Top = 768
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
@@ -10,7 +10,7 @@ object Form1: TForm1
   Menu = MainMenu1
   OnCreate = FormCreate
   ParentBiDiMode = False
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '2.2.0.4'
   object ToggleBox1: TToggleBox
     Left = 128
     Height = 40
