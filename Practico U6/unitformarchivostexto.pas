@@ -39,6 +39,7 @@ implementation
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   at:=Texto.crear('ArchivoPorDefecto','txt');
+  at.cerrar();
 end;
 
 procedure TForm1.MenuItem1Click(Sender: TObject);
@@ -57,7 +58,8 @@ procedure TForm1.ToggleBox1Change(Sender: TObject);
 var s:string;
 begin
   s:=InputBox('Introduzca el nombre del archivo','','');
-  at.crear(s,'txt');
+  at:=Texto.crear(s,'txt');
+  at.cerrar();
 end;
 
 end.

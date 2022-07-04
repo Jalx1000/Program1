@@ -1,16 +1,16 @@
 object Form1: TForm1
-  Left = 344
+  Left = 269
   Height = 240
-  Top = 768
+  Top = 541
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
-  ClientHeight = 220
-  ClientWidth = 320
+  ClientHeight = 0
+  ClientWidth = 0
   Menu = MainMenu1
   OnCreate = FormCreate
   ParentBiDiMode = False
-  LCLVersion = '2.2.0.4'
+  LCLVersion = '2.2.2.0'
   object ToggleBox1: TToggleBox
     Left = 128
     Height = 40

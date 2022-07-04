@@ -16,7 +16,7 @@ type
       nom,ext:string;
       modo:integer;
     public
-      constructor crear(nombre,extNuevo:string);
+      constructor crear(nombre: string; extNueva: string);
       procedure abrir();
       procedure cerrar();
       procedure setNombre(nombre:string);
@@ -33,37 +33,42 @@ implementation
 
 { Texto }
 
-constructor Texto.crear(nombre, extNuevo: string);
+constructor Texto.crear(nombre: string; extNueva: string);
 begin
-     nom:=nombre;
-     ext:=extNuevo;
-     modo:=3;
-     Assign(f,getNombreCompleto());
-     {$I-}
-       Rewrite(f); //rewrite := si existe un nombre con el mismo archivo lo
-                   //sobreescribe(no debe estar abierto)
-                   //si no existe lo crea
-     {$I+}
-     if(IOResult<>0)then begin
-       writeln('Error al crear el archivo de texto: '+getNombreCompleto());
-     end;
-     modo:=0; //lectura
+       //0:=LECTURA
+       //1:=Escritura
+   nom:=nombre;
+   ext:=extNueva;
+   modo:=3;
+   assign(f,getNombreCompleto());
+    {$I-}
+       rewrite(f); //rewrite= si existe un archivo con el mismo nombre, lo sobreescribe (no debe estar abierto)
+                 //SI NO EXISTE lo crea
+    {$I+}
+    if(IOResult<>0)then
+    begin
+         WriteLn('ERROR AL CREAR EL ARCHIVO DE TEXTO :'+ getNombreCompleto());
+
+    end;
+
+    modo:=0 //LECTURA
 end;
 
-procedure Texto.abrir;
+procedure Texto.abrir();
 begin
-  Assign(f,getNombreCompleto());
+  assign(f,getNombreCompleto());
   {$I-}
-    reset(f);
+       reset(f);
   {$I+}
-  if (IOResult<>0)then begin
-    Writeln('ERROR AL LEER/ABRIR ARCHIVO DE TEXTO: '+getNombreCompleto());
-    Exit;
-  end;
-  modo:=1; //modo:=1 siginifica lectura y modo:0 siginifica escritura
+     if(IOResult<>0)then
+    begin
+         WriteLn('ERROR AL LEER/ABRIR EL ARCHIVO DE TEXTO :'+ getNombreCompleto());
+         exit;
+    end;
+    modo:=1 //Escritura
 end;
 
-procedure Texto.cerrar;
+procedure Texto.cerrar();
 begin
   close(f);
   modo:=0;
@@ -71,12 +76,12 @@ end;
 
 procedure Texto.setNombre(nombre: string);
 begin
-
+   nom:=nombre;
 end;
 
 procedure Texto.setExt(extensionNueva: string);
 begin
-
+ ext:=extensionNueva;
 end;
 
 procedure Texto.escribirLinea(lin: string);
@@ -84,55 +89,69 @@ begin
   writeln(f,lin);
 end;
 
-function Texto.getNombreCompleto: string;
+function Texto.getNombreCompleto(): string;
 begin
-  Result:=nom+'.'+ext;
+   Result:=nom+'.'+ext;
 end;
 
-function Texto.getExt: string;
+function Texto.getExt(): string;
 begin
 
 end;
 
-function Texto.leerLinea: string;
-var s:string;
-begin
-  if (modo=1) then begin
-    readln(f,s);  //LeerLinea(archivo)
-    Result:=s;
-  end else begin
-    Result:=null;
-  end;
-end;
 
-function Texto.fin: boolean;
+
+function Texto.leerLinea(): string;
+  var s:string;
+  begin
+         if(modo=1)then
+         begin
+              readln(f,s); //s:=leerLinea(archivo );
+              Result:=s;
+         end
+         else
+         begin
+            Result:=null;
+
+         end;
+
+        end;
+
+function Texto.fin(): boolean;
 begin
   Result:=EOF(f);
 end;
 
-function Texto.copiar: texto;
+function Texto.copiar(): texto;
 var s:string;
-  auxF:Array [1..1024] of string;
+    auxF:Array[1..1024] of string;
+    i,j:integer;
   copia:Texto;
-  i,j:integer;
 begin
-  //abrir();
-  //mientras no leyo la ultima linea(no termino de  leer todo el documento)
   i:=1;
-  while (not fin()) do begin
-    //iremos linaea por lineal
-    s:=leerLinea();
-    auxF[i]:=s;
-    i:=i+1;
-  end;
-  cerrar();
-  copia:=Texto.crear('Copia','txt');//creamos el archivo donde se var a copiar
-  //copia.abrir();
-  for j:=1 to i do begin
-    copia.escribirLinea(auxF[j]);
-  end;
-  copia.cerrar();
-  Result:=copia;
+
+ abrir();
+ //mientras no leyo la ultima linea (no termino de leer todo el archivo)
+ while(not fin())do
+
+
+begin
+  //Linea por linea
+   s:=leerLinea();
+   auxF[i]:=s;
+   i:=i+1;
+
+end;
+cerrar();
+copia:=Texto.crear('copia','txt'); //el archivo donde copiare
+//copia.abrir();
+for j:=1 to i do
+begin
+   copia.escribirLinea(auxF[j]);
+end;
+
+copia.cerrar();
+Result:=copia;
 end;
 
 end.

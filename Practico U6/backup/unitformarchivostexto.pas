@@ -39,6 +39,7 @@ implementation
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   at:=Texto.crear('ArchivoPorDefecto','txt');
+  at.cerrar();
 end;
 
 procedure TForm1.MenuItem1Click(Sender: TObject);
