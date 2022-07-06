@@ -18,12 +18,14 @@ type
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
     ToggleBox1: TToggleBox;
     procedure FormCreate(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
     procedure ToggleBox1Change(Sender: TObject);
   private
     at:texto;
@@ -66,6 +68,11 @@ end;
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
   at.setNombre('hola');
+end;
+
+procedure TForm1.MenuItem5Click(Sender: TObject);
+begin
+  at2:=at.copiarInvertido();
 end;
 
 procedure TForm1.ToggleBox1Change(Sender: TObject);

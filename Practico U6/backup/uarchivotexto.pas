@@ -28,8 +28,9 @@ type
       function fin():boolean;
       function copiar():texto;
       procedure eliminar();
+      function copiarInvertido():Texto;
       function getLineaDePos(pos:integer):string;
-
+      function nroDeLineas():integer;
   end;
 
 implementation
@@ -115,9 +116,7 @@ function Texto.leerLinea(): string;
          else
          begin
             Result:=null;
-
          end;
-
         end;
 
 function Texto.fin(): boolean;
@@ -163,9 +162,49 @@ begin
   Erase(f);
 end;
 
-function Texto.getLineaDePos(pos: integer): string;
+function Texto.copiarInvertido: Texto;
+var dimF:integer;
+    linea:string;
+    copia:Texto;
 begin
+dimF:=nroDeLineas();
+copia.crear('copia','txt');
+while (dimF>=1) do begin
+  linea:=getLineaDePos(dimF);
+  dimF:=dimF-1;
+  copia.escribirLinea(linea);
+end;
+copia.cerrar();
+Result:=copia;
+end;
 
+function Texto.getLineaDePos(pos: integer): string;
+var cl:integer;
+     linea:string;
+begin
+  abrir();
+  cl:=0;  //contador de lineas
+  while (not fin()) do begin
+    cl:=cl+1;
+    if (pos=cl) then begin
+       linea:=leerLinea();
+    end else begin
+       leerLinea();
+    end;
+    cerrar();
+  Result:=linea;
+  end;
+end;
+
+function Texto.nroDeLineas: integer;
+var c:integer;
+begin
+  c:=0;
+  abrir();
+  while(not fin()) do begin
+  c:=c+1;
+  end;
+  Result:=c;
 end;
 
 end.

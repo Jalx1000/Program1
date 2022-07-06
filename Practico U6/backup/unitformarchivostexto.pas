@@ -65,7 +65,7 @@ end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
-  at.setNombre();
+  at.setNombre('hola');
 end;
 
 procedure TForm1.ToggleBox1Change(Sender: TObject);

@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 566
+  Left = 30
   Height = 240
-  Top = 383
+  Top = 739
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
-  ClientHeight = 220
-  ClientWidth = 320
+  ClientHeight = 0
+  ClientWidth = 0
   Menu = MainMenu1
   OnCreate = FormCreate
   ParentBiDiMode = False
