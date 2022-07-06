@@ -27,6 +27,9 @@ type
       function leerLinea():string;
       function fin():boolean;
       function copiar():texto;
+      procedure eliminar();
+      function getLineaDePos(pos:integer):string;
+
   end;
 
 implementation
@@ -96,7 +99,7 @@ end;
 
 function Texto.getExt(): string;
 begin
-
+   Result:=ext;
 end;
 
 
@@ -152,6 +155,17 @@ end;
 
 copia.cerrar();
 Result:=copia;
+end;
+
+procedure Texto.eliminar;
+begin
+  Assign(f,getNombreCompleto());
+  Erase(f);
+end;
+
+function Texto.getLineaDePos(pos: integer): string;
+begin
+
 end;
 
 end.

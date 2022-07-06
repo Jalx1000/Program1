@@ -27,6 +27,10 @@ type
       function leerLinea():string;
       function fin():boolean;
       function copiar():texto;
+      procedure eliminar();
+      function copiarInvertido():Texto;
+      function getLineaDePos(pos:integer):string;
+
   end;
 
 implementation
@@ -152,6 +156,22 @@ end;
 
 copia.cerrar();
 Result:=copia;
+end;
+
+procedure Texto.eliminar;
+begin
+  Assign(f,getNombreCompleto());
+  Erase(f);
+end;
+
+function Texto.copiarInvertido: Texto;
+begin
+
+end;
+
+function Texto.getLineaDePos(pos: integer): string;
+begin
+
 end;
 
 end.

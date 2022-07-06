@@ -1,20 +1,20 @@
 object Form1: TForm1
-  Left = 269
+  Left = 566
   Height = 240
-  Top = 541
+  Top = 383
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 220
+  ClientWidth = 320
   Menu = MainMenu1
   OnCreate = FormCreate
   ParentBiDiMode = False
   LCLVersion = '2.2.2.0'
   object ToggleBox1: TToggleBox
-    Left = 128
+    Left = 112
     Height = 40
-    Top = 104
+    Top = 72
     Width = 88
     BidiMode = bdRightToLeftNoAlign
     Caption = 'Crear Archivo'
@@ -31,6 +31,14 @@ object Form1: TForm1
       object MenuItem2: TMenuItem
         Caption = 'Copiar a otro archivo'
         OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Eliminar Copia'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Renombrar Archivo'
+        OnClick = MenuItem4Click
       end
     end
   end

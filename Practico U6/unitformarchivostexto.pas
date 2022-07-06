@@ -16,13 +16,18 @@ type
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
     ToggleBox1: TToggleBox;
     procedure FormCreate(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure ToggleBox1Change(Sender: TObject);
   private
     at:texto;
+    at2:Texto;
   public
 
   end;
@@ -48,10 +53,19 @@ begin
 end;
 
 procedure TForm1.MenuItem2Click(Sender: TObject);
-var at2:Texto;
 begin
      at2:=at.copiar();
      ShowMessage('Copiado exitosamente'+at2.getNombreCompleto());
+end;
+
+procedure TForm1.MenuItem3Click(Sender: TObject);
+begin
+  at2.eliminar();
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+  at.setNombre('hola');
 end;
 
 procedure TForm1.ToggleBox1Change(Sender: TObject);
