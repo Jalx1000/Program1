@@ -1,5 +1,10 @@
 # Program1
+
+Canal Codify zero
 https://www.youtube.com/channel/UCyVCOWx-eFEFRjqSAfZj07g 
+
+Lista de reproduccion program 1
+https://www.youtube.com/watch?v=sKB_k4fEGNY&list=PL1urG4s7pAjoNQI4evaJyxB0EeGmi9-j5
 
 Abrir el documento con extension lpi para abrir todo el proyecto
 
