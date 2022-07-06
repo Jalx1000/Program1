@@ -21,7 +21,6 @@
         <UnitName Value="unitFormArchivosTexto"/>
         <TopLine Value="32"/>
         <CursorPos X="32" Y="51"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -32,8 +31,8 @@
         <UnitName Value="UArchivoTexto"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="73"/>
-        <CursorPos X="17" Y="24"/>
+        <TopLine Value="6"/>
+        <CursorPos X="12" Y="99"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
       </Unit>
@@ -45,7 +44,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="uarchivotexto.pas"/>
         <Caret Line="35" Column="11" TopLine="35"/>
@@ -161,10 +160,6 @@
       <Position>
         <Filename Value="unitformarchivostexto.pas"/>
         <Caret Line="42" Column="15" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="uarchivotexto.pas"/>
-        <Caret Line="110" Column="25" TopLine="124"/>
       </Position>
     </JumpHistory>
     <RunParams>

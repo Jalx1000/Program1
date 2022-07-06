@@ -108,7 +108,6 @@ function Texto.leerLinea(): string;
          begin
               readln(f,s); //s:=leerLinea(archivo );
               Result:=s;
-
          end
          else
          begin

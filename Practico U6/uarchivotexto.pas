@@ -96,7 +96,7 @@ end;
 
 function Texto.getExt(): string;
 begin
-
+   Result:=ext;
 end;
 
 
