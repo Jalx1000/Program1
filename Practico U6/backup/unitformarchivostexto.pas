@@ -67,7 +67,7 @@ end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
-  at.setNombre('hola');
+  at.setNombre('copia');
 end;
 
 procedure TForm1.MenuItem5Click(Sender: TObject);
