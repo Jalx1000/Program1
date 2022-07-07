@@ -2,3 +2,5 @@ git status
 git add -A
 git commit -m "poner nombre del cambio realizado"
 git push -u origin main //main es la rama 
+
+git pull origin main para recibir las actualizacion del remoto

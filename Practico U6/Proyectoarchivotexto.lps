@@ -31,8 +31,8 @@
         <UnitName Value="UArchivoTexto"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="162"/>
-        <CursorPos Y="170"/>
+        <TopLine Value="187"/>
+        <CursorPos X="23" Y="202"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit>

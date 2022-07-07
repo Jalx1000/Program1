@@ -168,7 +168,7 @@ var dimF:integer;
     copia:Texto;
 begin
 dimF:=nroDeLineas();
-copia.crear('copia','txt');
+copia:=Texto.crear('copia','txt');
 while (dimF>=1) do begin
   linea:=getLineaDePos(dimF);
   dimF:=dimF-1;
@@ -192,15 +192,15 @@ begin
        leerLinea();
     end;
     cerrar();
-  Result:=linea;
   end;
+  Result:=linea;
 end;
 
 function Texto.nroDeLineas: integer;
 var c:integer;
 begin
-  c:=0;
   abrir();
+  c:=0;
   while(not fin()) do begin
   c:=c+1;
   end;

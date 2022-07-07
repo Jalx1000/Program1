@@ -5,8 +5,8 @@ object Form1: TForm1
   Width = 320
   BiDiMode = bdRightToLeft
   Caption = 'Form1'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 220
+  ClientWidth = 320
   Menu = MainMenu1
   OnCreate = FormCreate
   ParentBiDiMode = False
@@ -39,6 +39,10 @@ object Form1: TForm1
       object MenuItem4: TMenuItem
         Caption = 'Renombrar Archivo'
         OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Invertido'
+        OnClick = MenuItem5Click
       end
     end
   end
