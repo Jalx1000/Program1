@@ -31,6 +31,7 @@ type
       function copiarInvertido():Texto;
       function getLineaDePos(pos:integer):string;
       function nroDeLineas():integer;
+      procedure renombrar(NNombre:string);
   end;
 
 implementation
@@ -214,6 +215,11 @@ begin
   end;
   cerrar() ;
   Result:=c;
+end;
+
+procedure Texto.renombrar(NNombre: string);
+begin
+  RenameFile(getNombreCompleto(),NNombre+'.'+ext);
 end;
 
 end.

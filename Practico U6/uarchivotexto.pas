@@ -32,6 +32,7 @@ type
       function getLineaDePos(pos:integer):string;
       function nroDeLineas():integer;
       procedure renombrar(NNombre:string);
+      procedure palabrasInvertidas();
   end;
 
 implementation
@@ -220,6 +221,13 @@ end;
 procedure Texto.renombrar(NNombre: string);
 begin
   RenameFile(getNombreCompleto(),NNombre+'.'+ext);
+end;
+
+procedure Texto.palabrasInvertidas;
+var copia:Texto;
+begin
+  copia:=Texto.crear('copia palabras',ext);
+
 end;
 
 end.
