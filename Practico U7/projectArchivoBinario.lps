@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="projectArchivoBinario.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="67" Y="13"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitformbinario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UnitFormBinario"/>
+        <CursorPos X="21"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uarchivobinario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UArchivoBinario"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="156"/>
+        <CursorPos X="38" Y="130"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="urecordalumnos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="URecordAlumnos"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="46" Y="16"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Practico U6\uarchivoficheroreal.pas"/>
+        <UnitName Value="UArchivoFicheroReal"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="20" Y="24"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Practico U6\uarchivotexto.pas"/>
+        <UnitName Value="UArchivoTexto"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="56" Y="212"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UArchivoBinarioAlumnos"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="130"/>
+        <CursorPos X="69" Y="152"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

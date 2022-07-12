@@ -66,8 +66,10 @@ begin
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
+var s:string;
 begin
-  at.setNombre('copia');
+  s:=InputBox('Ingrese nuevo nombre','','');
+  at.renombrar(s);
 end;
 
 procedure TForm1.MenuItem5Click(Sender: TObject);

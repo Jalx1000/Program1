@@ -47,6 +47,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="UArchivoTexto"/>
       </Unit>
+      <Unit>
+        <Filename Value="uarchivoficheroreal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UArchivoFicheroReal"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
