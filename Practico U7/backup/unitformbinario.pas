@@ -21,12 +21,14 @@ type
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
   private
     fa:ArchivoBinarioAlumnos;
   public
@@ -68,12 +70,14 @@ begin
 end;
 
 procedure TForm1.MenuItem6Click(Sender: TObject);
-var ci,registro:integer;
-  	nombre,sexo: string;
-    domicilio: string;
-    INF110, LIN100, MAT101, FIS101, INF119: real;
+var
+  ci, registro: integer;
+  nombre, sexo: string;
+
+  domicilio: string;
+  INF110, LIN100, MAT101, FIS101, INF119: real;
 begin
-  fa.abrir();
+
   ci := StrToInt(InputBox('Introduzca CI', '', ''));
   registro := StrToInt(InputBox('Introduzca Registro', '', ''));
   nombre := InputBox('Introduzca nombre', '', '');
@@ -86,6 +90,16 @@ begin
   INF119 := StrToFloat(InputBox('Introduzca nota INF119', '', ''));
   fa.insertarAlumno(ci, registro, nombre, sexo[1], domicilio, INF110, LIN100,
     MAT101, FIS101, INF119);
+
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+var s:string;
+begin
+  s:=InputBox('Ingrese nuevo domicilio','','');
+  fa.abrir();
+  fa.setDomicilio(s);
+  fa.cerrar();
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

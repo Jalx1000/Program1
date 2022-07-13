@@ -21,12 +21,14 @@ type
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
   private
     fa:ArchivoBinarioAlumnos;
   public
@@ -89,6 +91,13 @@ begin
   fa.insertarAlumno(ci, registro, nombre, sexo[1], domicilio, INF110, LIN100,
     MAT101, FIS101, INF119);
 
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+begin
+  fa.abrir();
+  fa.setDomicilio();
+  fa.cerrar();
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

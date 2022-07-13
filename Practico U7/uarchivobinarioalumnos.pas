@@ -21,6 +21,7 @@ type
       procedure cerrar();
       procedure setNombre(nombre:string);
       procedure setExt(extensionNueva:string);
+      procedure setDomicilio();
       procedure escribirRecord(r:Alumno);
       procedure escribirAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
       procedure insertarAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
@@ -87,6 +88,20 @@ end;
 procedure ArchivoBinarioAlumnos.setExt(extensionNueva: string);
 begin
  ext:=extensionNueva;
+end;
+
+procedure ArchivoBinarioAlumnos.setDomicilio();
+var r:Alumno;
+		dom:string;
+begin
+  dom:=InputBox('Ingrese nuevo domicilio','','');
+  while (not fin()) do begin
+     leerRecord();
+     if(r.ci=111)then begin
+          r.domicilio:=dom;
+          escribirRecord();
+     end;
+  end;
 end;
 
 procedure ArchivoBinarioAlumnos.escribirRecord(r: Alumno);
