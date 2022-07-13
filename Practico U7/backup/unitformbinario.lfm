@@ -1,0 +1,43 @@
+object Form1: TForm1
+  Left = 30
+  Height = 379
+  Top = 114
+  Width = 566
+  Caption = 'Form1'
+  ClientHeight = 359
+  ClientWidth = 566
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object Memo1: TMemo
+    Left = 16
+    Height = 136
+    Top = 88
+    Width = 528
+    Lines.Strings = (
+      '---'
+    )
+    OnChange = Memo1Change
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    object MenuItem1: TMenuItem
+      Caption = 'Binario Alumnos'
+      object MenuItem2: TMenuItem
+        Caption = 'Crear Base'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Acceder'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Auxiliares'
+      object MenuItem5: TMenuItem
+        Caption = 'Mostrar'
+        OnClick = MenuItem5Click
+      end
+    end
+  end
+end

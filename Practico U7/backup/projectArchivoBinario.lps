@@ -8,20 +8,20 @@
       <Unit>
         <Filename Value="projectArchivoBinario.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="58" Y="13"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="65" Y="13"/>
+        <UsageCount Value="37"/>
       </Unit>
       <Unit>
         <Filename Value="unitformbinario.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UnitFormBinario"/>
-        <CursorPos X="21"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="35"/>
+        <CursorPos X="34" Y="55"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,7 +32,27 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="156"/>
         <CursorPos X="38" Y="130"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="37"/>
+      </Unit>
+      <Unit>
+        <Filename Value="urecordalumnos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="URecordAlumnos"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="25" Y="22"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UArchivoBinarioAlumnos"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="184"/>
+        <CursorPos X="10" Y="203"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\Practico U6\uarchivoficheroreal.pas"/>
@@ -40,28 +60,138 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="20" Y="24"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\Practico U6\uarchivotexto.pas"/>
         <UnitName Value="UArchivoTexto"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="5"/>
-        <CursorPos X="22" Y="234"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="urecordalumnos.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="URecordAlumnos"/>
-        <EditorIndex Value="3"/>
-        <CursorPos X="20"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="56" Y="212"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="32" Column="7" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="113" Column="5" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="102" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="24" Column="28" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="32" Column="63" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="urecordalumnos.pas"/>
+        <Caret Line="18" Column="31"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="32" Column="7" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="160" Column="7" TopLine="126"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="40" Column="13"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="41" Column="13" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="39" Column="3" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="40" Column="3" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="41" Column="3" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="42" Column="3" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="41" Column="3" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="42" Column="3" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="53" Column="17" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="179" Column="12" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="168" Column="22" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="167" Column="8" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="168" Column="38" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="33" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="198" Column="17" TopLine="164"/>
+      </Position>
+      <Position>
+        <Filename Value="uarchivobinarioalumnos.pas"/>
+        <Caret Line="34" Column="62" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="64" Column="44" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="51" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="55" Column="18" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="53" Column="10" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="54" Column="66" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="unitformbinario.pas"/>
+        <Caret Line="55" Column="34" TopLine="35"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

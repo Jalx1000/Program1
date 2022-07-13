@@ -21,8 +21,8 @@ type
       procedure cerrar();
       procedure setNombre(nombre:string);
       procedure setExt(extensionNueva:string);
-      procedure escribirRecord(lin:Alumno);
-      procedure escribirAlumno(ci,registro:integer; nombre:string; sexo:char; domicilio:string; INF110,LIN100,MAT101,FIS101,INF119:Real);
+      procedure escribirRecord(r:Alumno);
+      procedure escribirAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
       function getNombreCompleto():string;
       function getExt():string;
       function leerRecord():Alumno ;
@@ -30,8 +30,8 @@ type
       procedure aCrearArchivoAlumnosBase();
       procedure eliminar();
       function mostrarDato(cantidadPorLinea:integer):string;
-
-
+      function accederPorRegistro(reg:integer):Alumno;
+      function mostrarAccederPorRegistro(reg:integer):String;
   end;
 implementation
 
@@ -88,27 +88,24 @@ begin
  ext:=extensionNueva;
 end;
 
-procedure ArchivoBinarioAlumnos.escribirRecord(lin: Alumno);
+procedure ArchivoBinarioAlumnos.escribirRecord(r: Alumno);
 begin
-  writeln(f,lin);
+  write(f,r);
 end;
 
-procedure ArchivoBinarioAlumnos.escribirAlumno(ci, registro: integer;
-  domicilio: string; nombre: string; sexo: char; INF110, LIN100, MAT101,
-  FIS101, INF119: Real);
-var r:Alumno;
+procedure ArchivoBinarioAlumnos.escribirAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
+var r: Alumno;
 begin
   r.ci:=ci;
-  r.registro:=registro;
-  r.nombre:=nombre;
-  r.sexo:=sexo;
-  r.domicilio:=domicilio;
-  r.INF110:=INF110;
-  r.LIN100:=LIN100;
-  r.MAT101:=MAT101;
-  r.FIS101:=FIS101;
-  r.INF119:=INF119;
-
+  r.registro := registro;
+  r.nombre := nombre;
+  r.sexo := sexo;
+  r.domicilio := domicilio;
+  r.INF110 := INF110;
+  r.LIN100 := LIN100;
+  r.MAT101 := MAT101;
+  r.FIS101 := FIS101;
+  r.INF119 := INF119;
   escribirRecord(r);
 end;
 
@@ -125,16 +122,16 @@ end;
 
 
 function ArchivoBinarioAlumnos.leerRecord(): Alumno;
-  var s:Alumno;
+  var r:Alumno;
   begin
          if(modo=1)then
          begin
-              readln(f,s); //s:=leerRecord(archivo );
-              Result:=s;
+              read(f,r); //s:=leerRecord(archivo );
+              Result:=r;
          end
          else
          begin
-            Result:=null;
+            Result:=r;
          end;
         end;
 
@@ -144,12 +141,12 @@ begin
 end;
 
 procedure ArchivoBinarioAlumnos.aCrearArchivoAlumnosBase;
-var r:Alumno;
+//var r:Alumno;
 begin
-  escribirAlumno(111,202001,'Alumno01',H,'Av. Busch',70 ,80 , 50, 20, 80);
-  escribirAlumno(222,202002,'Alumno02',H,'Av. Centenario',80, 50, 100, 30, 90);
-  escribirAlumno(333,202003,'Alumno03',H,'Av. Santos Dumont',50, 90, 80, 90, 70);
-  escribirAlumno(444,202004,'Alumno04',M,'Av. Lujan',90, 80, 80, 70, 60);
+  escribirAlumno(111,202001,'Alumno01','H','Av. Busch',70 ,80 , 50, 20, 80);
+  escribirAlumno(222,202002,'Alumno02','H','Av. Centenario',80, 50, 100, 30, 90);
+  escribirAlumno(333,202003,'Alumno03','H','Av. Santos Dumont',50, 90, 80, 90, 70);
+  escribirAlumno(444,202004,'Alumno04','M','Av. Lujan',90, 80, 80, 70, 60);
 
 
 end;
@@ -161,11 +158,71 @@ begin
 end;
 
 function ArchivoBinarioAlumnos.mostrarDato(cantidadPorLinea: integer): string;
+var s:string;
+  	r:Alumno;
+    c:integer;
 begin
+  c:=0;
+  s:=' CI, Reg, Nombre, Domicilio, notas: INF110, LIN100, MAT101, FIS101, INF119'+Chr(10)+Chr(13);
+  abrir();
+  while (not fin()) do
+  begin
+     s:=s+Chr(10)+Chr(13);
+     r:=leerRecord();
+     s:=s+IntToStr(r.ci)+'-';
+     s:=s+IntToStr(r.registro)+'-';
+     s:=s+r.nombre+'-';
+     s:=s+r.sexo+'-';
+     s:=s+r.domicilio+'-';
+     s:=s+FloatToStr(r.INF110)+'-';
+     s:=s+FloatToStr(r.LIN100)+'-';
+     s:=s+FloatToStr(r.MAT101)+'-';
+     s:=s+FloatToStr(r.FIS101)+'-';
+     s:=s+FloatToStr(r.INF119);
+     c:=c+1;
+     if(c=cantidadPorLinea)then begin
+          s:=s+Chr(10)+Chr(13);
+          c:=0;
+     end;
 
+  end;
+  cerrar();
+  Result:=s;
 end;
 
+function ArchivoBinarioAlumnos.accederPorRegistro(reg: integer): Alumno;
+var rActual,rRes,r:Alumno;
+begin
+  abrir();
+  while (not fin) do begin
+     rActual:=leerRecord();
+     if(reg=rActual.registro) then begin
+		   rRes:=rActual;
+     end;
+  end;
+  cerrar();
+  Result:=rRes;
+end;
 
+function ArchivoBinarioAlumnos.mostrarAccederPorRegistro(reg: integer): String;
+var r:Alumno;
+s:string;
+begin
+  r:=accederPorRegistro(reg);
+	s:=' CI, Reg, Nombre, Domicilio, notas: INF110, LIN100, MAT101, FIS101, INF119'+Chr(10)+Chr(13);
+  s:=s+Chr(10)+Chr(13);
+  s:=s+IntToStr(r.ci)+'-';
+  s:=s+IntToStr(r.registro)+'-';
+  s:=s+r.nombre+'-';
+  s:=s+r.sexo+'-';
+  s:=s+r.domicilio+'-';
+  s:=s+FloatToStr(r.INF110)+'-';
+  s:=s+FloatToStr(r.LIN100)+'-';
+  s:=s+FloatToStr(r.MAT101)+'-';
+  s:=s+FloatToStr(r.FIS101)+'-';
+  s:=s+FloatToStr(r.INF119);
+     Result:=s;
+end;
 
 end.
 

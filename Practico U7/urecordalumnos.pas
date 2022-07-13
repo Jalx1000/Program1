@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils;
 type
-  Alumno=class
+  Alumno=Record
      ci:integer;
      registro:integer;
      nombre:string[50];
