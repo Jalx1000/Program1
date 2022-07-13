@@ -20,11 +20,13 @@ type
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
   private
     fa:ArchivoBinarioAlumnos;
   public
@@ -52,7 +54,7 @@ var reg:integer;
   s:string;
 begin
   reg:=StrToInt(InputBox('Introducir numero de registro','',''));
-  s:=fa.accederPorRegistro(reg);
+  s:=fa.mostrarAccederPorRegistro(reg);
   Memo1.Clear;
   Memo1.Append(s);
 end;
@@ -63,6 +65,27 @@ begin
   s:=fa.mostrarDato(1);
   Memo1.Clear;
   Memo1.Append(s);
+end;
+
+procedure TForm1.MenuItem6Click(Sender: TObject);
+var ci,registro:integer;
+  	nombre,sexo: string;
+    domicilio: string;
+    INF110, LIN100, MAT101, FIS101, INF119: real;
+begin
+  fa.abrir();
+  ci := StrToInt(InputBox('Introduzca CI', '', ''));
+  registro := StrToInt(InputBox('Introduzca Registro', '', ''));
+  nombre := InputBox('Introduzca nombre', '', '');
+  sexo := (InputBox('Introduzca SEXO', '', ''));
+  domicilio := InputBox('Introduzca domicilio', '', '');
+  INF110 := StrToFloat(InputBox('Introduzca nota INF110', '', ''));
+  LIN100 := StrToFloat(InputBox('Introduzca nota LIN100', '', ''));
+  MAT101 := StrToFloat(InputBox('Introduzca nota MAT101', '', ''));
+  FIS101 := StrToFloat(InputBox('Introduzca nota FIS101', '', ''));
+  INF119 := StrToFloat(InputBox('Introduzca nota INF119', '', ''));
+  fa.insertarAlumno(ci, registro, nombre, sexo[1], domicilio, INF110, LIN100,
+    MAT101, FIS101, INF119);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

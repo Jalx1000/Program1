@@ -31,6 +31,10 @@ object Form1: TForm1
         Caption = 'Acceder'
         OnClick = MenuItem3Click
       end
+      object MenuItem6: TMenuItem
+        Caption = 'Agregar Datos Nuevo'
+        OnClick = MenuItem6Click
+      end
     end
     object MenuItem4: TMenuItem
       Caption = 'Auxiliares'

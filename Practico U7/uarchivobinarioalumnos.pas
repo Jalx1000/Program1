@@ -23,6 +23,7 @@ type
       procedure setExt(extensionNueva:string);
       procedure escribirRecord(r:Alumno);
       procedure escribirAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
+      procedure insertarAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
       function getNombreCompleto():string;
       function getExt():string;
       function leerRecord():Alumno ;
@@ -94,9 +95,10 @@ begin
 end;
 
 procedure ArchivoBinarioAlumnos.escribirAlumno(ci, registro: integer; nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101, FIS101, INF119: real);
-var r: Alumno;
+var
+  r: Alumno;
 begin
-  r.ci:=ci;
+  r.ci := ci;
   r.registro := registro;
   r.nombre := nombre;
   r.sexo := sexo;
@@ -107,6 +109,20 @@ begin
   r.FIS101 := FIS101;
   r.INF119 := INF119;
   escribirRecord(r);
+end;
+
+//METODO PARA INSERTAR EN LA ULTIMA POSICION
+procedure ArchivoBinarioAlumnos.insertarAlumno(ci, registro: integer;
+  nombre: string; sexo: char; domicilio: string; INF110, LIN100, MAT101,
+  FIS101, INF119: real);
+begin
+  abrir();
+  while (not fin()) do begin
+     leerRecord();
+  end;
+  		//al leer los archivos indica q esta en la ultima posicion
+     escribirAlumno(ci,registro,nombre,sexo,domicilio,INF110,LIN100,MAT101,FIS101,INF119);
+  cerrar();
 end;
 
 function ArchivoBinarioAlumnos.getNombreCompleto(): string;
