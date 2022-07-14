@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 40
+  Left = -9
   Height = 296
-  Top = 710
+  Top = 704
   Width = 643
   Caption = 'Raton en el Laberinto'
   ClientHeight = 276
@@ -336,7 +336,7 @@ object Form1: TForm1
   end
   object SpeedButton1: TSpeedButton
     Cursor = crHandPoint
-    Left = 200
+    Left = 195
     Height = 32
     Top = 128
     Width = 171

@@ -137,11 +137,9 @@ begin
            Fin.fil:=2;
            Fin.col:=6;
             end;
-
        3:begin //8x8
         fils:=8;
         cols:=8;
-
         for f:=1 to fils do
          for c:=1 to cols do
            lab[f,c]:=LN3[f,c];
@@ -149,13 +147,7 @@ begin
            Ini.col:=PosC;
            Fin.fil:=8;
            Fin.col:=5;
-
          end;
-
-
-
-
-
    end;
    raton:=Ini;
    dimcam:=0;
@@ -413,16 +405,12 @@ begin
                img.Picture.LoadFromFile('images/TierraDefinitivo.png');
             end;
 
-
-
                    if IzquierdaEncerrado(C,F) then begin
                img.Picture.LoadFromFile('images/IzquierdaCerrado.png');
                sw:=true;
             end else if sw=False then begin
                img.Picture.LoadFromFile('images/TierraDefinitivo.png');
             end;
-
-
 
 
             if(lab[f,c]=1)then begin

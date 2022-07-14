@@ -84,29 +84,33 @@ begin
         Fin.fil:=4;
         Fin.col:=3;
         end;
-      2:begin
+      2:begin //6x6
         fils:=6;
         cols:=6;
-        for f:=1 to fils do begin
-          for c:=1 to cols do begin
-            Lab[f,c]:=LN2[f,c];
-            Ini.fil:=posF;
-           Ini.col:=PosC;
+
+        for f:=1 to fils do
+         for c:=1 to cols do
+           lab[f,c]:=LN2[f,c];
+           Ini.fil:=2;
+           Ini.col:=1;
            Fin.fil:=2;
            Fin.col:=6;
-          end;
-        end;
-      end;
-      3:begin
+            end;
+
+       3:begin //8x8
         fils:=8;
         cols:=8;
-        for f:=1 to fils do begin
-				//for c:=1 to cols do begin
-              Lab[f,c]:=LN3[f,c];
-            end;
-        end;
-      end;
 
+        for f:=1 to fils do
+         for c:=1 to cols do
+           lab[f,c]:=LN3[f,c];
+           Ini.fil:=2;
+           Ini.col:=1;
+           Fin.fil:=8;
+           Fin.col:=5;
+
+         end;
+   end;
    raton:=Ini;
    dimcam:=0;
    nivel:=niv;
@@ -134,17 +138,77 @@ begin
           MoverRaton(abajo);
         end;
         2:begin
-
+          MoverRaton(derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
         end;
         3:begin
-
+          MoverRaton(derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Izquierda);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Izquierda);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
         end;
      end;
 end;
 
 procedure Juego.Dibujar;
 var
-  f,c,dx,dy:integer;
+  f,c,dx,dy,ni:integer;
   img:TImage;
 begin
   case nivel of
@@ -186,8 +250,8 @@ begin
         ctx.Height:=600;
         dx:=80;
         dy:=80;
-        for f:=1 to 7 do
-          for c:=1 to 7 do
+        for f:=1 to 6 do
+          for c:=1 to 6 do
           begin
             img:=TImage.Create(ctx);
             img.Parent:=ctx;

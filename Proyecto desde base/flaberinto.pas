@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Menus, ExtCtrls, Buttons, ujuego, flab;
+  Menus, ExtCtrls, Buttons, ujuego, flab, MMSystem;
 type
 
   { TForm1 }
@@ -52,15 +52,15 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button1Click(Sender: TObject);
-var inicioJuego:integer;
+var ComenzarEn:integer;
 begin
-  inicioJuego:=j.getNivel();
-  if (inicioJuego=0)then begin
-    inicioJuego:=1;
-  end;
-  J:=Juego.Crear(Lab);
-  J.CrearLab(inicioJuego,fil,col);
+   ComenzarEn:=j.getnivel;
+   if comenzarEn=0 then begin
+     comenzarEn:=1;
+   end;
 
+   J:=Juego.Crear(Lab);
+   J.CrearLab(comenzarEn,fil,col);
 end;
 
 procedure TForm1.BIzqClick(Sender: TObject);
@@ -85,18 +85,18 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject;var key:char);
 begin
-  case (key) of
-  		 'w':begin
-         j.MoverRaton(Arriba);
+  case(key) of
+      'w':begin
+             j.MoverRaton(Arriba);
            end;
-       's':begin
-         j.MoverRaton(Abajo);
+      's':begin
+             j.MoverRaton(Abajo);
            end;
-       'd':begin
-         j.MoverRaton(Derecha);
+      'd':begin
+             j.MoverRaton(Derecha);
            end;
-       'a':begin
-         j.MoverRaton(Izquierda);
+      'a':begin
+             j.MoverRaton(Izquierda);
            end;
   end;
 end;

@@ -1,7 +1,7 @@
 object Lab: TLab
-  Left = 620
+  Left = 623
   Height = 240
-  Top = 777
+  Top = 641
   Width = 320
   Caption = 'Lab'
   OnKeyDown = FormKeyDown

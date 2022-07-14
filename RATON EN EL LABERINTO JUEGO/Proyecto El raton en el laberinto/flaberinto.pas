@@ -244,19 +244,12 @@ end;
 procedure TForm1.SpeedButton1Click(Sender: TObject);
 var ComenzarEn:integer;
 begin
-
-
-
-   ComenzarEn:=j.getnivel;
+   ComenzarEn:=J.getnivel+1;
    if comenzarEn=0 then begin
      comenzarEn:=1;
    end;
-
    J:=Juego.Crear(Lab);
-
-
   J.CrearLab(comenzarEn,fil,col);
-
 end;
 
 procedure TForm1.SpeedButton2Click(Sender: TObject);

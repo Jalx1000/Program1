@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="8">
+    <Units Count="11">
       <Unit0>
         <Filename Value="PLaberinto.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="46"/>
       </Unit0>
       <Unit1>
         <Filename Value="flaberinto.pas"/>
@@ -19,9 +19,9 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="80"/>
-        <CursorPos X="27" Y="88"/>
-        <UsageCount Value="43"/>
+        <TopLine Value="39"/>
+        <CursorPos X="4" Y="57"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -30,9 +30,9 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="107"/>
-        <CursorPos X="10" Y="125"/>
-        <UsageCount Value="43"/>
+        <TopLine Value="180"/>
+        <CursorPos X="77" Y="204"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -41,9 +41,10 @@
         <ComponentName Value="Lab"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="13"/>
-        <UsageCount Value="43"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="11"/>
+        <CursorPos X="27" Y="31"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -61,7 +62,6 @@
         <TopLine Value="284"/>
         <CursorPos X="3" Y="247"/>
         <UsageCount Value="14"/>
-        <LoadedDesigner Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
@@ -78,104 +78,157 @@
         <CursorPos X="10" Y="181"/>
         <UsageCount Value="10"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="333"/>
+        <CursorPos X="10" Y="362"/>
+        <FoldState Value=" T3jL0mT"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="237"/>
+        <CursorPos X="28" Y="247"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flab.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="11"/>
+        <CursorPos X="24" Y="16"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit10>
     </Units>
-    <JumpHistory Count="24" HistoryIndex="23">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="110" Column="4" TopLine="91"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="274" Column="3" TopLine="272"/>
       </Position1>
       <Position2>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="109" Column="4" TopLine="82"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="264" Column="3" TopLine="262"/>
       </Position2>
       <Position3>
-        <Filename Value="flaberinto.pas"/>
-        <Caret Line="103" Column="6" TopLine="70"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="269" Column="3" TopLine="262"/>
       </Position3>
       <Position4>
-        <Filename Value="flaberinto.pas"/>
-        <Caret Line="104" Column="3" TopLine="70"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="153" Column="3" TopLine="151"/>
       </Position4>
       <Position5>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="38" Column="17" TopLine="19"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="133" Column="3" TopLine="131"/>
       </Position5>
       <Position6>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="124" Column="21" TopLine="101"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="250" Column="20" TopLine="244"/>
       </Position6>
       <Position7>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="40" Column="22" TopLine="38"/>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="33" Column="56" TopLine="17"/>
       </Position7>
       <Position8>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="104" Column="3" TopLine="70"/>
+        <Caret Line="101" Column="7" TopLine="70"/>
       </Position8>
       <Position9>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="112" Column="3" TopLine="74"/>
+        <Caret Line="99" Column="40" TopLine="70"/>
       </Position9>
       <Position10>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="87" Column="47" TopLine="68"/>
+        <Caret Line="33" Column="56" TopLine="27"/>
       </Position10>
       <Position11>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="91" Column="21" TopLine="71"/>
+        <Caret Line="98" Column="9" TopLine="75"/>
       </Position11>
       <Position12>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="34" Column="48"/>
+        <Caret Line="90" Column="22" TopLine="66"/>
       </Position12>
       <Position13>
-        <Filename Value="flaberinto.pas"/>
-        <Caret Line="89" Column="15" TopLine="70"/>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="40" Column="17" TopLine="21"/>
       </Position13>
       <Position14>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="99" Column="10" TopLine="65"/>
+        <Caret Line="90" Column="33" TopLine="71"/>
       </Position14>
       <Position15>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="34" Column="51" TopLine="20"/>
+        <Caret Line="99" Column="27" TopLine="74"/>
       </Position15>
       <Position16>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="11" Column="30"/>
+        <Caret Line="88" Column="3" TopLine="75"/>
       </Position16>
       <Position17>
         <Filename Value="flaberinto.pas"/>
-        <Caret Line="10"/>
+        <Caret Line="33" Column="77" TopLine="5"/>
       </Position17>
       <Position18>
-        <Filename Value="flaberinto.pas"/>
-        <Caret Line="9" Column="43"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="250" Column="20" TopLine="244"/>
       </Position18>
       <Position19>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="204" Column="32" TopLine="182"/>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="46" Column="27" TopLine="46"/>
       </Position19>
       <Position20>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="317" Column="9" TopLine="284"/>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="59" Column="9" TopLine="46"/>
       </Position20>
       <Position21>
         <Filename Value="ujuego.pas"/>
-        <Caret Line="250" Column="12" TopLine="223"/>
+        <Caret Line="113" Column="8" TopLine="85"/>
       </Position21>
       <Position22>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="281" Column="11" TopLine="174"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="245" TopLine="264"/>
       </Position22>
       <Position23>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="176" Column="12" TopLine="186"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="207" Column="18" TopLine="198"/>
       </Position23>
       <Position24>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="124" Column="20" TopLine="104"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="299" Column="3" TopLine="291"/>
       </Position24>
+      <Position25>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="133" Column="3" TopLine="131"/>
+      </Position25>
+      <Position26>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="189" Column="41" TopLine="170"/>
+      </Position26>
+      <Position27>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="188" Column="12" TopLine="169"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="247" Column="17" TopLine="227"/>
+      </Position28>
+      <Position29>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="88" TopLine="89"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="247" Column="28" TopLine="237"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

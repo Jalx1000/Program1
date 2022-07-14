@@ -2,10 +2,10 @@ object Form1: TForm1
   Left = 7
   Height = 247
   Top = 408
-  Width = 654
+  Width = 601
   Caption = 'Raton en el Laberinto'
   ClientHeight = 227
-  ClientWidth = 654
+  ClientWidth = 601
   Menu = MainMenu1
   LCLVersion = '2.2.0.4'
   object BDer: TButton
@@ -45,27 +45,27 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Bauto: TButton
-    Left = 264
+    Left = 256
     Height = 25
-    Top = 96
-    Width = 88
-    Caption = 'Automatico 1'
+    Top = 160
+    Width = 80
+    Caption = 'Automatico'
     OnClick = BautoClick
     TabOrder = 4
   end
   object Button1: TButton
-    Left = 360
+    Left = 344
     Height = 25
-    Top = 96
-    Width = 88
+    Top = 160
+    Width = 80
     Caption = 'Comenzar'
     OnClick = Button1Click
     TabOrder = 5
   end
   object Button2: TButton
-    Left = 312
+    Left = 296
     Height = 25
-    Top = 179
+    Top = 195
     Width = 75
     Caption = 'Teclado'
     OnClick = Button2Click
