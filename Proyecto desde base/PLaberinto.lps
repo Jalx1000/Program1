@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="PLaberinto.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="43"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="flaberinto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="80"/>
+        <CursorPos X="27" Y="88"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ujuego.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="172"/>
+        <CursorPos X="27" Y="191"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="flab.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Lab"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="13"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flab.pas"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="284"/>
+        <CursorPos X="3" Y="247"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1196"/>
+        <CursorPos X="16" Y="1198"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/winunits-base/src/mmsystem.pp"/>
+        <UnitName Value="MMSystem"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="162"/>
+        <CursorPos X="10" Y="181"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="110" Column="4" TopLine="91"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="109" Column="4" TopLine="82"/>
+      </Position2>
+      <Position3>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="103" Column="6" TopLine="70"/>
+      </Position3>
+      <Position4>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="104" Column="3" TopLine="70"/>
+      </Position4>
+      <Position5>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="38" Column="17" TopLine="19"/>
+      </Position5>
+      <Position6>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="124" Column="21" TopLine="101"/>
+      </Position6>
+      <Position7>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="40" Column="22" TopLine="38"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <Caret Line="51" Column="22" TopLine="48"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="255" Column="14" TopLine="255"/>
+      </Position9>
+      <Position10>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="104" Column="3" TopLine="70"/>
+      </Position10>
+      <Position11>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="112" Column="3" TopLine="74"/>
+      </Position11>
+      <Position12>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="87" Column="47" TopLine="68"/>
+      </Position12>
+      <Position13>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="91" Column="21" TopLine="71"/>
+      </Position13>
+      <Position14>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="34" Column="48"/>
+      </Position14>
+      <Position15>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="89" Column="15" TopLine="70"/>
+      </Position15>
+      <Position16>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="99" Column="10" TopLine="65"/>
+      </Position16>
+      <Position17>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="34" Column="51" TopLine="20"/>
+      </Position17>
+      <Position18>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="11" Column="30"/>
+      </Position18>
+      <Position19>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="10"/>
+      </Position19>
+      <Position20>
+        <Filename Value="flaberinto.pas"/>
+        <Caret Line="9" Column="43"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="8" Column="3" TopLine="171"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="299" Column="3" TopLine="291"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="284" Column="4" TopLine="282"/>
+      </Position23>
+      <Position24>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="204" Column="32" TopLine="182"/>
+      </Position24>
+      <Position25>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="317" Column="9" TopLine="284"/>
+      </Position25>
+      <Position26>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="250" Column="12" TopLine="223"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <Caret Line="50" Column="24" TopLine="40"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <Caret Line="53" Column="20" TopLine="38"/>
+      </Position28>
+      <Position29>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="281" Column="11" TopLine="174"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../../MEGAPACK TODOS LOS TEMAS PROG1/PROYECTO FINAL/RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
+        <Caret Line="65" Column="27" TopLine="42"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

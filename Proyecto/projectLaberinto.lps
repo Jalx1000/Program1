@@ -8,16 +8,16 @@
       <Unit>
         <Filename Value="projectLaberinto.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="10" Y="13"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="formjuego.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="formJuego"/>
         <CursorPos X="15"/>
@@ -38,9 +38,10 @@
         <Filename Value="formjuego2.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="formJuego2"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="11"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -48,21 +49,23 @@
       </Unit>
       <Unit>
         <Filename Value="..\..\Proyecto program 1\ujuego.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="35" Y="16"/>
+        <TopLine Value="276"/>
+        <CursorPos X="5" Y="113"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Proyecto program 1\flaberinto.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="106"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Proyecto program 1\flab.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="19"/>
         <CursorPos X="86" Y="8"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
@@ -74,11 +77,23 @@
         <TopLine Value="381"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\PROYECTO FINAL\RATON EN EL LABERINTO JUEGO\Proyecto El raton en el laberinto\ujuego.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="476"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="1">
       <Position>
         <Filename Value="..\..\Proyecto program 1\ujuego.pas"/>
         <Caret Line="7" Column="63"/>
+      </Position>
+      <Position>
+        <Filename Value="formjuego2.pas"/>
+        <Caret Column="11"/>
       </Position>
     </JumpHistory>
     <RunParams>

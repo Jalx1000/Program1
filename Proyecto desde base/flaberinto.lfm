@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 7
+  Height = 247
+  Top = 408
+  Width = 654
+  Caption = 'Raton en el Laberinto'
+  ClientHeight = 227
+  ClientWidth = 654
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object BDer: TButton
+    Left = 144
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Derecha'
+    OnClick = BDerClick
+    TabOrder = 0
+  end
+  object BIzq: TButton
+    Left = 32
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Izquierda'
+    OnClick = BIzqClick
+    TabOrder = 1
+  end
+  object BArr: TButton
+    Left = 88
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Arriba'
+    OnClick = BArrClick
+    TabOrder = 2
+  end
+  object BAba: TButton
+    Left = 88
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Abajo'
+    OnClick = BAbaClick
+    TabOrder = 3
+  end
+  object Bauto: TButton
+    Left = 264
+    Height = 25
+    Top = 96
+    Width = 88
+    Caption = 'Automatico 1'
+    OnClick = BautoClick
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 360
+    Height = 25
+    Top = 96
+    Width = 88
+    Caption = 'Comenzar'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 312
+    Height = 25
+    Top = 179
+    Width = 75
+    Caption = 'Teclado'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object MainMenu1: TMainMenu
+    Left = 8
+    Top = 16
+    object MenuItem1: TMenuItem
+      Caption = 'Niveles'
+      object MenuItem2: TMenuItem
+        Caption = 'Nivel 1'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Nivel 2'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Nivel 3'
+        OnClick = MenuItem4Click
+      end
+    end
+  end
+end

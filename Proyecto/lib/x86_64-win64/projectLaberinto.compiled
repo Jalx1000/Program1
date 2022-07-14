@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -gl -WG -l -vewnhibq &quot;-FiE:\titi\PROGRAMACION\Semestre 3\Program1\Proyecto\lib\x86_64-win64&quot; -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FuE:\titi\PROGRAMACION\Semestre 3\Program1\Proyecto\&quot; &quot;-FUE:\titi\PROGRAMACION\Semestre 3\Program1\Proyecto\lib\x86_64-win64\&quot; &quot;-FEE:\titi\PROGRAMACION\Semestre 3\Program1\Proyecto\&quot; &quot;-oE:\titi\PROGRAMACION\Semestre 3\Program1\Proyecto\projectLaberinto.exe&quot; -dLCL -dLCLwin32 projectLaberinto.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

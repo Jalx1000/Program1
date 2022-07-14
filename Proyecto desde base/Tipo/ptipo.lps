@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="ptipo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="59"/>
+        <CursorPos X="13" Y="79"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="ptipo.lpr"/>
+        <Caret Line="84" Column="31" TopLine="59"/>
+      </Position1>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
