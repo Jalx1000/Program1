@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="47"/>
       </Unit0>
       <Unit1>
         <Filename Value="flaberinto.pas"/>
@@ -19,20 +19,21 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="39"/>
-        <CursorPos X="4" Y="57"/>
-        <UsageCount Value="46"/>
+        <CursorPos X="27" Y="57"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="ujuego.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="230"/>
-        <CursorPos X="18" Y="207"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="66"/>
+        <CursorPos Y="209"/>
+        <FoldState Value=" T3iO0o2k"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -44,7 +45,7 @@
         <EditorIndex Value="4"/>
         <TopLine Value="11"/>
         <CursorPos X="27" Y="31"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -80,11 +81,11 @@
       </Unit7>
       <Unit8>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/ujuego.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="333"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="157"/>
         <CursorPos X="10" Y="362"/>
-        <FoldState Value=" T3jL0mT"/>
-        <UsageCount Value="11"/>
+        <FoldState Value=" T3jL0m1-"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -92,10 +93,10 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="237"/>
-        <CursorPos X="28" Y="247"/>
-        <UsageCount Value="11"/>
+        <CursorPos X="5" Y="245"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit9>
@@ -104,7 +105,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="11"/>
         <CursorPos X="24" Y="16"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit10>
     </Units>
@@ -195,39 +196,39 @@
       </Position21>
       <Position22>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="245" TopLine="264"/>
+        <Caret Line="207" Column="18" TopLine="198"/>
       </Position22>
       <Position23>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="207" Column="18" TopLine="198"/>
+        <Caret Line="299" Column="3" TopLine="291"/>
       </Position23>
       <Position24>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="299" Column="3" TopLine="291"/>
+        <Caret Line="133" Column="3" TopLine="131"/>
       </Position24>
       <Position25>
-        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="133" Column="3" TopLine="131"/>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="189" Column="41" TopLine="170"/>
       </Position25>
       <Position26>
         <Filename Value="ujuego.pas"/>
-        <Caret Line="189" Column="41" TopLine="170"/>
+        <Caret Line="188" Column="12" TopLine="169"/>
       </Position26>
       <Position27>
-        <Filename Value="ujuego.pas"/>
-        <Caret Line="188" Column="12" TopLine="169"/>
+        <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
+        <Caret Line="247" Column="17" TopLine="227"/>
       </Position27>
       <Position28>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="247" Column="17" TopLine="227"/>
+        <Caret Line="247" Column="28" TopLine="237"/>
       </Position28>
       <Position29>
-        <Filename Value="flaberinto.pas"/>
-        <Caret Line="88" TopLine="89"/>
+        <Filename Value="ujuego.pas"/>
+        <Caret Line="209" Column="2" TopLine="58"/>
       </Position29>
       <Position30>
         <Filename Value="../RATON EN EL LABERINTO JUEGO/Proyecto El raton en el laberinto/flaberinto.pas"/>
-        <Caret Line="247" Column="28" TopLine="237"/>
+        <Caret Line="247" Column="4" TopLine="237"/>
       </Position30>
     </JumpHistory>
     <RunParams>

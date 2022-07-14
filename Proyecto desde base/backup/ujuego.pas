@@ -121,8 +121,8 @@ function Juego.getNivel: integer;
 begin
   Result:=nivel;
 end;
-
 procedure Juego.Automatico();
+
 begin
   if(nivel=0)then begin
     nivel:=nivel+1;
@@ -162,12 +162,51 @@ begin
           ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
         end;
         3:begin
-
+          MoverRaton(derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Arriba);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Derecha);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Izquierda);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Izquierda);
+          ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
+          MoverRaton(Abajo);
+					ShowMessage('F: '+IntToStr(raton.fil)+' C: '+IntToStr(raton.col));
         end;
      end;
 end;
 
-procedure Juego.Dibujar;
+fprocedure Juego.Dibujar;
 var
   f,c,dx,dy,ni:integer;
   img:TImage;

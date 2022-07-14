@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="Aplicacion6.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="43" Y="18"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="aplicacion_6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Aplicacion_6"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="186"/>
+        <CursorPos X="3" Y="190"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="aplicacion_6u.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Aplicacion_6U"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="297"/>
+        <CursorPos X="116" Y="306"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="archivoficherou.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ArchivoFicheroU"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="55" Y="31"/>
+        <UsageCount Value="67"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ficherorealu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FicheroRealU"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="15"/>
+        <UsageCount Value="62"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="D:\Lazaruss\fpc\3.2.0\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="385"/>
+        <CursorPos X="19" Y="1421"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="cadenas.pas"/>
+        <UnitName Value="Cadenas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="453"/>
+        <CursorPos Y="505"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="cadenas.pas"/>
+        <Caret Line="511" Column="18" TopLine="494"/>
+      </Position1>
+      <Position2>
+        <Filename Value="cadenas.pas"/>
+        <Caret Line="523" Column="22" TopLine="501"/>
+      </Position2>
+      <Position3>
+        <Filename Value="cadenas.pas"/>
+        <Caret Line="534" Column="20" TopLine="503"/>
+      </Position3>
+      <Position4>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="57" Column="10" TopLine="32"/>
+      </Position4>
+      <Position5>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="136" Column="10" TopLine="132"/>
+      </Position5>
+      <Position6>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="138" Column="17" TopLine="120"/>
+      </Position6>
+      <Position7>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="139" Column="17" TopLine="121"/>
+      </Position7>
+      <Position8>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="140" Column="17" TopLine="122"/>
+      </Position8>
+      <Position9>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="141" Column="15" TopLine="120"/>
+      </Position9>
+      <Position10>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="138" Column="30" TopLine="120"/>
+      </Position10>
+      <Position11>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="143" Column="44" TopLine="126"/>
+      </Position11>
+      <Position12>
+        <Filename Value="cadenas.pas"/>
+        <Caret Line="509" Column="142" TopLine="493"/>
+      </Position12>
+      <Position13>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="142" Column="25" TopLine="126"/>
+      </Position13>
+      <Position14>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="130" Column="17" TopLine="121"/>
+      </Position14>
+      <Position15>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="131" Column="17" TopLine="122"/>
+      </Position15>
+      <Position16>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="244" Column="82" TopLine="221"/>
+      </Position16>
+      <Position17>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="175" Column="27" TopLine="156"/>
+      </Position17>
+      <Position18>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="170" Column="40" TopLine="158"/>
+      </Position18>
+      <Position19>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="173" Column="19" TopLine="159"/>
+      </Position19>
+      <Position20>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="171" Column="7" TopLine="153"/>
+      </Position20>
+      <Position21>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="170" Column="22" TopLine="153"/>
+      </Position21>
+      <Position22>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="173" Column="13" TopLine="162"/>
+      </Position22>
+      <Position23>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="170" Column="43" TopLine="152"/>
+      </Position23>
+      <Position24>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="211" Column="29" TopLine="185"/>
+      </Position24>
+      <Position25>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="170" Column="62" TopLine="149"/>
+      </Position25>
+      <Position26>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="227" Column="11" TopLine="222"/>
+      </Position26>
+      <Position27>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="193" Column="86" TopLine="149"/>
+      </Position27>
+      <Position28>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="192" Column="86" TopLine="157"/>
+      </Position28>
+      <Position29>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="168" TopLine="151"/>
+      </Position29>
+      <Position30>
+        <Filename Value="aplicacion_6.pas"/>
+        <Caret Line="49" TopLine="32"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

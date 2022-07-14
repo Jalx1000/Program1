@@ -38,7 +38,7 @@
         <Filename Value="urecordalumnos.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="URecordAlumnos"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="25" Y="22"/>
         <UsageCount Value="41"/>
         <Loaded Value="True"/>
@@ -47,10 +47,9 @@
         <Filename Value="uarchivobinarioalumnos.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="UArchivoBinarioAlumnos"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="82"/>
-        <CursorPos X="29" Y="102"/>
+        <CursorPos X="16" Y="99"/>
         <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit>
@@ -69,12 +68,29 @@
         <CursorPos X="56" Y="212"/>
         <UsageCount Value="8"/>
       </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 7\archivostipou.pas"/>
+        <UnitName Value="Archivostipou"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="91"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 7\archivostipo.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ArchivosTipo"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="308"/>
+        <CursorPos X="17" Y="207"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uarchivobinarioalumnos.pas"/>
-        <Caret Line="168" Column="38" TopLine="148"/>
-      </Position>
       <Position>
         <Filename Value="uarchivobinarioalumnos.pas"/>
         <Caret Line="33" Column="55"/>
@@ -189,7 +205,11 @@
       </Position>
       <Position>
         <Filename Value="uarchivobinarioalumnos.pas"/>
-        <Caret Line="102" Column="30" TopLine="85"/>
+        <Caret Line="102" Column="29" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\Users\Usuario\Downloads\fuentes\Program1\MEGAPACK TODOS LOS TEMAS PROG1\Tarea 7\archivostipo.pas"/>
+        <Caret TopLine="96"/>
       </Position>
     </JumpHistory>
     <RunParams>

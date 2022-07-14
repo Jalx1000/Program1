@@ -54,7 +54,7 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 var ComenzarEn:integer;
 begin
-   ComenzarEn:=j.getnivel;
+   ComenzarEn:=j.getNivel();
    if comenzarEn=0 then begin
      comenzarEn:=1;
    end;

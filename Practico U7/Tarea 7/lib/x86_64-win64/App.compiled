@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\Lazaruss\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1381338938"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -WG -l -vewnhibq &quot;-FiD:\lazarus\Tarea prog 1\Tarea 7\lib\x86_64-win64&quot; -FuD:\Lazaruss\lcl\units\x86_64-win64\win32 -FuD:\Lazaruss\lcl\units\x86_64-win64 -FuD:\Lazaruss\components\lazutils\lib\x86_64-win64 -FuD:\Lazaruss\packager\units\x86_64-win64 &quot;-FuD:\lazarus\Tarea prog 1\Tarea 7\&quot; &quot;-FUD:\lazarus\Tarea prog 1\Tarea 7\lib\x86_64-win64\&quot; &quot;-FED:\lazarus\Tarea prog 1\Tarea 7\&quot; &quot;-oD:\lazarus\Tarea prog 1\Tarea 7\App.exe&quot; -dLCL -dLCLwin32 App.lpr"/>
+</CONFIG>

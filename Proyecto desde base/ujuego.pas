@@ -121,8 +121,8 @@ function Juego.getNivel: integer;
 begin
   Result:=nivel;
 end;
-
 procedure Juego.Automatico();
+
 begin
   if(nivel=0)then begin
     nivel:=nivel+1;

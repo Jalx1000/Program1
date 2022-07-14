@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 700
+  Height = 336
+  Top = 287
+  Width = 535
+  Caption = 'Editor de texto'
+  ClientHeight = 316
+  ClientWidth = 535
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 316
+    Top = 0
+    Width = 535
+    Align = alClient
+    OnChange = Memo1Change
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 16
+    Top = 8
+    object Archivos: TMenuItem
+      Caption = 'Archivos'
+      object Nuevo: TMenuItem
+        Caption = 'Nuevo'
+        OnClick = NuevoClick
+      end
+      object Abrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = AbrirClick
+      end
+      object Guardar: TMenuItem
+        Caption = 'Guardar'
+        OnClick = GuardarClick
+      end
+      object GuardarComo: TMenuItem
+        Caption = 'Guardar como'
+        OnClick = GuardarComoClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Salir: TMenuItem
+        Caption = 'Salir'
+        OnClick = SalirClick
+      end
+    end
+    object Editar: TMenuItem
+      Caption = 'Editar'
+      object Encriptar: TMenuItem
+        Caption = 'Encriptar'
+        OnClick = EncriptarClick
+      end
+      object Desencriptar: TMenuItem
+        Caption = 'Desencriptar'
+        OnClick = DesencriptarClick
+      end
+    end
+  end
+  object OP: TOpenDialog
+    Left = 80
+    Top = 8
+  end
+  object SD: TSaveDialog
+    Left = 144
+    Top = 8
+  end
+end

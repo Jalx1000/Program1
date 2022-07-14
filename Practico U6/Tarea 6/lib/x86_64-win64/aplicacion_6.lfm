@@ -1,0 +1,108 @@
+object Form1: TForm1
+  Left = 545
+  Height = 436
+  Top = 229
+  Width = 370
+  Caption = 'Archivos TXT'
+  ClientHeight = 416
+  ClientWidth = 370
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object Crear: TButton
+    Left = 144
+    Height = 33
+    Top = 232
+    Width = 88
+    Caption = 'Crear'
+    OnClick = CrearClick
+    TabOrder = 0
+  end
+  object EscribirTxt: TButton
+    Left = 144
+    Height = 33
+    Top = 280
+    Width = 88
+    Caption = 'Escribir TXT'
+    OnClick = EscribirTxtClick
+    TabOrder = 1
+  end
+  object LeerTXT: TButton
+    Left = 144
+    Height = 32
+    Top = 328
+    Width = 88
+    Caption = 'Leer TXT'
+    OnClick = LeerTXTClick
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 96
+    Height = 90
+    Top = 24
+    Width = 150
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 3
+  end
+  object MainMenu1: TMainMenu
+    Left = 10
+    Top = 10
+    object Ejercicios: TMenuItem
+      Caption = 'Ejercicios T6'
+      object Copiar: TMenuItem
+        Caption = '1.Copiar archivo'
+        OnClick = CopiarClick
+      end
+      object EliminarCopia: TMenuItem
+        Caption = '2.Eliminar Copia'
+        OnClick = EliminarCopiaClick
+      end
+      object CopiaInvertido: TMenuItem
+        Caption = '3.Copia Invertido'
+        OnClick = CopiaInvertidoClick
+      end
+      object Renombrar: TMenuItem
+        Caption = '4.Renombrar'
+        OnClick = RenombrarClick
+      end
+      object leer: TMenuItem
+        Caption = 'leer'
+        OnClick = leerClick
+      end
+      object leercaracter: TMenuItem
+        Caption = 'leercaracter'
+        OnClick = leercaracterClick
+      end
+      object Conjunto: TMenuItem
+        Caption = 'Conjunto'
+        OnClick = ConjuntoClick
+      end
+      object MenuItem1: TMenuItem
+        Caption = 'MenuItem1'
+        OnClick = MenuItem1Click
+      end
+      object Palabras: TMenuItem
+        Caption = 'Palabras'
+        OnClick = PalabrasClick
+      end
+      object InvertirPalabras: TMenuItem
+        Caption = '5.Invertir Palabras'
+        OnClick = InvertirPalabrasClick
+      end
+      object CopiarAFicheroReal: TMenuItem
+        Caption = '6.1Copiar A Fichero Real'
+        OnClick = CopiarAFicheroRealClick
+      end
+      object MostrarFicheroReal: TMenuItem
+        Caption = '6.2Mostrar Fichero Real'
+        OnClick = MostrarFicheroRealClick
+      end
+      object MenuItem2: TMenuItem
+        Caption = '7.1 Lineas del fichero'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end
