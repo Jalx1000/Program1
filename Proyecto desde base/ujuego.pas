@@ -120,6 +120,9 @@ end;
 
 procedure Juego.Automatico();
 begin
+  if(nivel=0)then begin
+    nivel:=nivel+1;
+     end;
  		 case nivel of
         1:begin
           MoverRaton(derecha);

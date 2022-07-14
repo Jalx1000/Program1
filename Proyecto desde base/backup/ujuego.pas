@@ -120,6 +120,9 @@ end;
 
 procedure Juego.Automatico();
 begin
+  if(nivel=0)then begin
+    nivel:=nivel+1;
+     end
  		 case nivel of
         1:begin
           MoverRaton(derecha);
@@ -177,108 +180,36 @@ begin
           img.Stretch:=true;
      end; //Fin caso 1
   	 		 2: begin
-        sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
-            ctx.Caption:='Nivel: '+IntToStr(nivel);
+           sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+        ctx.Caption:='Nivel :'+IntToStr(nivel);
         ctx.Width:=600;
         ctx.Height:=600;
         dx:=80;
         dy:=80;
-
-              for f:=1 to 7 do begin
-           for c:=1 to 7 do begin
-              img:=TImage.Create(ctx);
-            img.Parent:=ctx;
-            img.Picture.LoadFromFile('images/FondoGris.png');
-
-            img.Left:=f*dx;
-            img.Top:=c*dy;
-            img.Width:=dx;
-            img.Height:=dy;
-            img.Stretch:=true;
-
-
-           end;
-        end;
-
-
-
-
-        for f:=1 to fils do
-          for c:=1 to cols do
+        for f:=1 to 7 do
+          for c:=1 to 7 do
           begin
             img:=TImage.Create(ctx);
             img.Parent:=ctx;
-
-             if EsEsquinaDer(f,c) then begin
-               img.Picture.LoadFromFile('images/EsquinaDer.png');
-               sw:=true;
-            end else if sw=False then begin
-             img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-                if EsEsquinaIZ(C,F) then begin
-               img.Picture.LoadFromFile('images/EsquinaIZ.png');
-               sw:=true;
-            end else if sw=False then begin
-               img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-            if Vertical(c,F) then begin
-               img.Picture.LoadFromFile('images/VerticalImagen.png');
-               sw:=true;
-            end else if sw=False then begin
-               img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-            if EsEsquinaDerDown(c,F) then begin
-               img.Picture.LoadFromFile('images/EsquinaDerDown.png');
-               sw:=true;
-            end else if sw=False then begin
-               img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-                     if CentroSuperior(C,F) then begin
-               img.Picture.LoadFromFile('images/GrassUp.png');
-               sw:=true;
-            end else if sw=False then begin
-               img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-
-
-                   if IzquierdaEncerrado(C,F) then begin
-               img.Picture.LoadFromFile('images/IzquierdaCerrado.png');
-               sw:=true;
-            end else if sw=False then begin
-               img.Picture.LoadFromFile('images/TierraDefinitivo.png');
-            end;
-
-
-
-
-            if(lab[f,c]=1)then begin
-               img.Picture.LoadFromFile('images/Pastito.png')
-            end;
+            if(lab[f,c]=1)then
+               img.Picture.LoadFromFile('images/ladrillo.jpg')
+            else
+               img.Picture.LoadFromFile('images/pasto.jpg');
             img.Left:=f*dx;
             img.Top:=c*dy;
             img.Width:=dx;
             img.Height:=dy;
             img.Stretch:=true;
-            sw:=False;
           end;
           img:=TImage.Create(ctx);
           img.Parent:=ctx;
-           img.Picture.LoadFromFile('images/Ratoncito.png');
+          img.Picture.LoadFromFile('images/raton.jpg');
           img.Left:=raton.col*dx;
           img.Top:=raton.fil*dy;
-          img.Width:=dx-20;
-          img.Height:=dy-20;
+          img.Width:=dx;
+          img.Height:=dy;
           img.Stretch:=true;
-          filAntigua:=2;
-          ColAntigua:=1;
-
-
-      end;//fin caso 2
+         end;//fin caso 2
          3: begin
            sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
         ctx.Caption:='Nivel :'+IntToStr(nivel);
