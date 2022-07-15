@@ -850,10 +850,7 @@ begin
   end;
     est:=1; //Modo escritura
  end else begin
-
  showmessage('El archivo con tipo se encuentra abierto');
-
-
  end;
 end;
 
@@ -913,7 +910,6 @@ begin
        reg.col:=raton.col;
        reg.nivelActual:=nivel;
      self.escribir(reg);
-
      self.cerrar;
 end;
 

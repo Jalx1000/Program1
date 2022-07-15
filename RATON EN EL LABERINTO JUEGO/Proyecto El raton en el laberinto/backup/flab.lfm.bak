@@ -1,7 +1,7 @@
 object Lab: TLab
-  Left = 407
+  Left = 411
   Height = 781
-  Top = 118
+  Top = 0
   Width = 781
   Caption = 'Lab'
   OnCreate = FormCreate

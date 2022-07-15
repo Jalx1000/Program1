@@ -24,6 +24,10 @@ type
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    OpenDialog1: TOpenDialog;
     procedure BAbaClick(Sender: TObject);
     procedure BArrClick(Sender: TObject);
     procedure BautoClick(Sender: TObject);
@@ -34,10 +38,13 @@ type
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
   private
     { private declarations }
     J:juego;
-    fil,col:integer;
+    r:Posicion;
+    fil,col,nivel:integer;
   public
     { public declarations }
   end;
@@ -54,41 +61,20 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 var ComenzarEn,n:integer;
 begin
-   ComenzarEn:=1;
-   //if comenzarEn=0 then begin
-   //  comenzarEn:=1;
-   //end;
-   //
-   //J:=Juego.Crear(Lab);
-   //J.CrearLab(comenzarEn,fil,col);
-   ////
-   //while (comenzarEn=1) do begin
-   //       if(ComenzarEn<=3)then
-   //       begin
-   //         J:=Juego.Crear(Lab);
-   //         J.CrearLab(comenzarEn,fil,col);
-   //       end;
-   //       ComenzarEn:=ComenzarEn+1;
-   //end;
-   n:=j.getNivel();
-   case ComenzarEn of
-       1:begin
-         J:=Juego.Crear(Lab);
-         J.CrearLab(n+1,fil,col);
-         ComenzarEn:=ComenzarEn+1;
-       end;
-       2:begin
-         J:=Juego.Crear(Lab);
-         J.CrearLab(n+1,fil,col);
-         ComenzarEn:=ComenzarEn+1;
-       end;
-       3:begin
-         J:=Juego.Crear(Lab);
-         J.CrearLab(n+1,fil,col);
-         ComenzarEn:=ComenzarEn+1;
-         //Break;
-       end;
-   end;
+  //ComenzarEn:=J.getnivel+1;
+  // if comenzarEn=0 then begin
+  //   comenzarEn:=1;
+  // end;
+   J:=Juego.Crear(Lab);
+   J.CrearLab(1,fil,col);
+   j.Automatico();
+   J:=Juego.Crear(Lab);
+   J.CrearLab(2,fil,col);
+   j.Automatico();
+   J:=Juego.Crear(Lab);
+   J.CrearLab(3,fil,col);
+   j.Automatico();
+
 end;
 
 procedure TForm1.BIzqClick(Sender: TObject);
@@ -145,6 +131,28 @@ procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
   J:=Juego.Crear(Lab);
   J.CrearLab(3,fil,col);
+end;
+
+procedure TForm1.MenuItem6Click(Sender: TObject);
+begin
+  fil:=2;
+  col:=1;
+  if OpenDialog1.execute then begin
+    j.abrir;
+    j.posicionar(0);
+    j.leer(r);
+      fil:=r.fil;
+      col:=r.col;
+      nivel:=r.NivelActual;
+    j.cerrar();
+  end;
+  J:=Juego.Crear(Lab);
+  J.CrearLab(nivel,fil,col);
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.BautoClick(Sender: TObject);

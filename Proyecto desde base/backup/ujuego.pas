@@ -31,6 +31,11 @@ type
       dimcam,nivel:integer;
       //ctx es para interactuar con el Formulario
       Ctx:TLab;
+
+      //para el record
+      Fe:File of Posicion;
+      nom:string[120];
+      Est:integer;//Es el modo lectura o escritura
     public
 
       constructor Crear(Form:TLab);
@@ -39,6 +44,14 @@ type
       procedure Automatico();
       procedure Dibujar();
       procedure MoverRaton(dir:Direccion);
+
+      procedure escribir(reg:Posicion);
+      procedure cargar();
+      procedure leer(var reg:Posicion);
+      procedure abrir;
+      procedure cerrar();
+      function finDeArchivo():Boolean;
+      procedure posicionar(pos:integer);
   end;
 
 implementation
@@ -120,7 +133,7 @@ end;
 
 function Juego.getNivel: integer;
 begin
-  Result:=NivelActual;
+  Result:=nivel;
 end;
 procedure Juego.Automatico();
 
@@ -370,6 +383,73 @@ begin
      Dibujar();
    end;
 
+end;
+
+procedure Juego.escribir(reg: Posicion);
+begin
+ if est<>0 then begin
+     write(fe,reg)
+     end else begin
+       ShowMessage('Error al escribir');
+     end;
+end;
+
+
+procedure Juego.cargar;
+var reg:Posicion;
+begin
+ self.crear;
+ reg.fil:=raton.fil;
+ reg.col:=raton.col;
+ reg.NivelActual:=nivel;
+ Self.escribir(reg);
+ Self.cerrar();
+end;
+
+procedure Juego.leer(var reg: Posicion);
+begin
+   if (Est<>0) then begin
+       read(f,reg);
+   end else begin
+     	 ShowMessage('Error al leer el archivo');
+   end;
+end;
+
+procedure Juego.abrir;
+begin
+  if est=0 then begin
+  	 Assign(fe,nom);
+     {$I-}
+       Reset(fe);
+     {$I+}
+  if(est<>0)then begin
+      ShowMessage('Error al abrir');
+      Exit;
+  end;
+    est:=2;
+  end else begin
+    ShowMessage('Archivo abierto');
+  end;
+end;
+
+procedure Juego.cerrar;
+begin
+   Close(fe);
+   est:=0;
+end;
+
+function Juego.fin: Boolean;
+begin
+		 Result:=EOF(Fe);
+end;
+
+procedure Juego.posicionar(pos: integer);
+begin
+		 if(pos>=0) and (pos<=FileSize(fe)) then begin
+       Seek(fe,pos);
+     end else begin
+       ShowMessage('Posicion fuera de rango');
+     end;
 end;
 
 end.

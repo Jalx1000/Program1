@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = -7
   Height = 296
-  Top = 704
+  Top = 563
   Width = 643
   Caption = 'Raton en el Laberinto'
   ClientHeight = 276
@@ -407,8 +407,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
-    Left = 12
-    Top = 69
+    Left = 8
     object Archivos: TMenuItem
       Caption = 'Archivos'
       object Abrir: TMenuItem
@@ -437,7 +436,6 @@ object Form1: TForm1
     end
   end
   object OP: TOpenDialog
-    Left = 48
-    Top = 96
+    Left = 40
   end
 end

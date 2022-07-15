@@ -803,7 +803,6 @@ begin
    suma:=f+c;
 
 
-
    if (lab[c,f]=1) or (suma=2) then begin
        if up=true then begin
            raton.fil:=raton.fil+1;
@@ -822,21 +821,9 @@ begin
        end;
 
 
-
-
-
-
-
    end else if lab[c,f]=0 then begin
      DibujarRaton(DireccionMirada);
    end;
-
-
-
-
-
-
-
 
 end;
 
@@ -863,10 +850,7 @@ begin
   end;
     est:=1; //Modo escritura
  end else begin
-
  showmessage('El archivo con tipo se encuentra abierto');
-
-
  end;
 end;
 
