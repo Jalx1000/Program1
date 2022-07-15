@@ -18,6 +18,7 @@ type
   Direccion=integer;
   Posicion=record
     fil,col,NivelActual:integer;
+
   end;
 
   { Juego }
@@ -40,7 +41,7 @@ type
 
       constructor Crear(Form:TLab);
       procedure CrearLab(niv,PosF,PosC:integer);
-      function getNivel():integer;
+      function GetNivel():integer;
       procedure Automatico();
       procedure Dibujar();
       procedure MoverRaton(dir:Direccion);
@@ -78,6 +79,8 @@ begin
   Ini.col:=0;
   Fin.fil:=0;
   Fin.col:=0;
+  nom:='SaveFile.dat';
+  est:=0;
 end;
 
 procedure Juego.CrearLab(niv,PosF,PosC: integer);
@@ -98,6 +101,9 @@ begin
         Ini.col:=1;
         Fin.fil:=4;
         Fin.col:=3;
+        while (raton.fil=4) and (raton.col=3)do begin
+          niv:=niv+1;
+        end;
         end;
       2:begin //6x6
         fils:=6;
@@ -132,7 +138,7 @@ begin
    Dibujar();
 end;
 
-function Juego.getNivel: integer;
+function Juego.GetNivel: integer;
 begin
   Result:=nivel;
 end;
@@ -140,7 +146,7 @@ procedure Juego.Automatico();
 
 begin
   if(nivel=0)then begin
-    nivel:=nivel+1;
+    //nivel:=nivel+1;
      end;
  		 case nivel of
         1:begin
@@ -225,10 +231,13 @@ procedure Juego.Dibujar;
 var
   f,c,dx,dy,ni:integer;
   img:TImage;
+  sonido:boolean;
 begin
   case nivel of
      1: begin
-        sndPlaySound('Sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+         if(raton.fil=2) and (raton.col=1)then begin
+  				 sonido:=sndPlaySound('Sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+         end;
         ctx.Caption:='Nivel :'+IntToStr(nivel);
         ctx.Width:=500;
         ctx.Height:=500;
@@ -257,9 +266,15 @@ begin
           img.Width:=dx;
           img.Height:=dy;
           img.Stretch:=true;
+          if(raton.fil=4) and (raton.col=3)then begin
+  				 sonido:=sndPlaySound('Sounds/END.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+           nivel:=nivel+1;
+          end;
      end; //Fin caso 1
   	 		 2: begin
-           sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+           if(raton.fil=2) and (raton.col=1)then begin
+  				 sonido:=sndPlaySound('Sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+         	 end;
         ctx.Caption:='Nivel :'+IntToStr(nivel);
         ctx.Width:=600;
         ctx.Height:=600;
@@ -288,9 +303,14 @@ begin
           img.Width:=dx;
           img.Height:=dy;
           img.Stretch:=true;
+          if(raton.fil=2) and (raton.col=6)then begin
+  				 sonido:=sndPlaySound('Sounds/END.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+          end;
          end;//fin caso 2
          3: begin
-           sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+           if(raton.fil=2) and (raton.col=1)then begin
+  				 sonido:=sndPlaySound('Sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+         	 end;
         ctx.Caption:='Nivel :'+IntToStr(nivel);
         ctx.Width:=800;
         ctx.Height:=800;
@@ -319,10 +339,11 @@ begin
           img.Width:=dx;
           img.Height:=dy;
           img.Stretch:=true;
+          if(raton.fil=8) and (raton.col=5)then begin
+  				 sonido:=sndPlaySound('Sounds/END.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+          end;
          end;//Fin caso 3
    end;
-
-
 
   ctx.Show;
   if(raton.fil=ini.fil)and(raton.col=ini.col)then
@@ -385,7 +406,6 @@ begin
    end;
 
 end;
-
 procedure Juego.escribir(reg: Posicion);
 begin
  if est<>0 then begin
@@ -396,15 +416,15 @@ begin
 end;
 
 
-procedure Juego.cargar;
-var reg:Posicion;
+procedure Juego.cargar();
+var reg:posicion;
 begin
- self.crear;
- reg.fil:=raton.fil;
- reg.col:=raton.col;
- reg.NivelActual:=nivel;
- Self.escribir(reg);
- Self.cerrar();
+     self.crear;
+       reg.fil:=raton.fil;
+       reg.col:=raton.col;
+       reg.nivelActual:=nivel;
+     self.escribir(reg);
+     self.cerrar;
 end;
 
 procedure Juego.leer(var reg: Posicion);
@@ -465,10 +485,12 @@ begin
    exit;
   end;
     est:=1; //Modo escritura
-  end else begin
-   showmessage('El archivo con tipo se encuentra abierto');
-  end;
+ end else begin
+ showmessage('El archivo con tipo se encuentra abierto');
+ end;
 end;
+
+
 
 end.
 

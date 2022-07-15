@@ -34,12 +34,14 @@ type
     procedure BIzqClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure BDerClick(Sender: TObject);
-    procedure Button2Click(Sender: TObject;var key:char);
+    procedure Button2Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure UsarTecladoKeyPress(Sender: TObject; var Key: char);
   private
     { private declarations }
     J:juego;
@@ -59,22 +61,18 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button1Click(Sender: TObject);
-var ComenzarEn,n:integer;
+var ComenzarEn:integer;
 begin
-  //ComenzarEn:=J.getnivel+1;
-  // if comenzarEn=0 then begin
-  //   comenzarEn:=1;
-  // end;
-   J:=Juego.Crear(Lab);
-   J.CrearLab(1,fil,col);
-   j.Automatico();
-   J:=Juego.Crear(Lab);
-   J.CrearLab(2,fil,col);
-   j.Automatico();
-   J:=Juego.Crear(Lab);
-   J.CrearLab(3,fil,col);
-   j.Automatico();
+   ComenzarEn:=j.getnivel;
+   if comenzarEn=0 then begin
+     comenzarEn:=1;
+   end;
 
+   J:=Juego.Crear(Lab);
+   showmessage(inttostr(comenzarEn));
+
+
+  J.CrearLab(comenzarEn,fil,col);
 end;
 
 procedure TForm1.BIzqClick(Sender: TObject);
@@ -97,22 +95,9 @@ begin
   J.MoverRaton(Derecha);
 end;
 
-procedure TForm1.Button2Click(Sender: TObject;var key:char);
+procedure TForm1.Button2Click(Sender: TObject);
 begin
-  case(key) of
-      'w':begin
-             j.MoverRaton(Arriba);
-           end;
-      's':begin
-             j.MoverRaton(Abajo);
-           end;
-      'd':begin
-             j.MoverRaton(Derecha);
-           end;
-      'a':begin
-             j.MoverRaton(Izquierda);
-           end;
-  end;
+
 end;
 
 procedure TForm1.MenuItem2Click(Sender: TObject);
@@ -152,6 +137,33 @@ end;
 
 procedure TForm1.MenuItem7Click(Sender: TObject);
 begin
+  j.cargar();
+  ShowMessage('guardado');
+end;
+
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState
+  );
+begin
+
+end;
+
+procedure TForm1.UsarTecladoKeyPress(Sender: TObject; var Key: char);
+begin
+   case(key) of
+      'w':begin
+             J.MoverRaton(Arriba);
+           end;
+      's':begin
+           J.MoverRaton(abajo);
+           end;
+      'd':begin
+             J.MoverRaton(derecha);
+           end;
+      'a':begin
+             J.MoverRaton(Izquierda);
+           end;
+
+       end;
 
 end;
 

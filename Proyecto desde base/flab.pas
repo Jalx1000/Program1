@@ -14,8 +14,9 @@ type
   TLab = class(TForm)
     procedure FormCreate(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+
   private
-    { private declarations }
+
   public
     { public declarations }
   end;
@@ -52,5 +53,5 @@ begin
   end;
 end;
 
-end.
 
+end.

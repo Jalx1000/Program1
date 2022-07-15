@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 219
+  Left = 3
   Height = 296
-  Top = 185
+  Top = 684
   Width = 643
   Caption = 'Raton en el Laberinto'
   ClientHeight = 276
@@ -11,7 +11,7 @@ object Form1: TForm1
   OnKeyDown = FormKeyDown
   OnKeyPress = FormKeyPress
   OnMouseEnter = FormMouseEnter
-  LCLVersion = '2.0.12.0'
+  LCLVersion = '2.2.0.4'
   object Image1: TImage
     Left = -32
     Height = 304
@@ -336,7 +336,7 @@ object Form1: TForm1
   end
   object SpeedButton1: TSpeedButton
     Cursor = crHandPoint
-    Left = 200
+    Left = 195
     Height = 32
     Top = 128
     Width = 171
@@ -401,13 +401,13 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
+    OnClick = UsarTecladoClick
     OnKeyPress = UsarTecladoKeyPress
     ParentFont = False
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
-    Left = 12
-    Top = 69
+    Left = 8
     object Archivos: TMenuItem
       Caption = 'Archivos'
       object Abrir: TMenuItem
@@ -436,7 +436,6 @@ object Form1: TForm1
     end
   end
   object OP: TOpenDialog
-    Left = 48
-    Top = 96
+    Left = 40
   end
 end

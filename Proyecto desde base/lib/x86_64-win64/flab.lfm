@@ -1,7 +1,7 @@
 object Lab: TLab
-  Left = 77
+  Left = 81
   Height = 363
-  Top = 11
+  Top = 13
   Width = 462
   Caption = 'Lab'
   Color = clBlack

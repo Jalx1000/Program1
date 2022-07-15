@@ -1,74 +1,75 @@
 object Form1: TForm1
-  Left = 3
-  Height = 247
-  Top = 407
-  Width = 590
+  Left = 28
+  Height = 435
+  Top = 498
+  Width = 248
   Caption = 'Raton en el Laberinto'
-  ClientHeight = 227
-  ClientWidth = 590
+  ClientHeight = 415
+  ClientWidth = 248
   Menu = MainMenu1
   LCLVersion = '2.2.0.4'
   object BDer: TButton
     Left = 144
-    Height = 40
-    Top = 105
-    Width = 40
+    Height = 51
+    Top = 139
+    Width = 48
     Caption = '→'
     OnClick = BDerClick
     TabOrder = 0
   end
   object BIzq: TButton
-    Left = 64
-    Height = 40
-    Top = 105
-    Width = 40
+    Left = 48
+    Height = 51
+    Top = 139
+    Width = 48
     Caption = '←'
     OnClick = BIzqClick
     TabOrder = 1
   end
   object BArr: TButton
-    Left = 104
-    Height = 40
-    Top = 65
-    Width = 40
+    Left = 96
+    Height = 51
+    Top = 88
+    Width = 48
     Caption = '↑'
     OnClick = BArrClick
     TabOrder = 2
   end
   object BAba: TButton
-    Left = 104
-    Height = 40
-    Top = 145
-    Width = 40
+    Left = 96
+    Height = 51
+    Top = 190
+    Width = 48
     Caption = '↓'
     OnClick = BAbaClick
     TabOrder = 3
   end
   object Bauto: TButton
-    Left = 392
-    Height = 25
-    Top = 136
-    Width = 80
+    Left = 67
+    Height = 32
+    Top = 312
+    Width = 96
     Caption = 'AUTO'
     OnClick = BautoClick
     TabOrder = 4
   end
   object Button1: TButton
-    Left = 232
-    Height = 25
-    Top = 112
-    Width = 80
+    Left = 67
+    Height = 32
+    Top = 271
+    Width = 96
     Caption = 'Comenzar'
     OnClick = Button1Click
     TabOrder = 5
   end
   object Button2: TButton
-    Left = 488
-    Height = 25
-    Top = 80
-    Width = 80
+    Left = 67
+    Height = 32
+    Top = 352
+    Width = 96
     Caption = 'TCLDO'
     OnClick = Button2Click
+    OnKeyPress = UsarTecladoKeyPress
     TabOrder = 6
   end
   object MainMenu1: TMainMenu

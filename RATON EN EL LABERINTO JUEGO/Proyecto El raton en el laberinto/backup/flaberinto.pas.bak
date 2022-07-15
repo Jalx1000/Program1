@@ -204,17 +204,12 @@ begin
   J:=Juego.Crear(Lab);
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState
-  );
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
-
 end;
 
 procedure TForm1.FormKeyPress(Sender: TObject; var Key: char);
 begin
-
-
-
 end;
 
 procedure TForm1.GuardarClick(Sender: TObject);

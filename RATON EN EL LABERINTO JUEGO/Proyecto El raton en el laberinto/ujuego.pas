@@ -270,15 +270,8 @@ begin
             img.Width:=dx;
             img.Height:=dy;
             img.Stretch:=true;
-
-
            end;
         end;
-
-
-
-
-
 
 
         for f:=1 to fils do
@@ -309,13 +302,9 @@ begin
             end;
 
 
-
-
-
             if(lab[f,c]=1)then begin
                img.Picture.LoadFromFile('images/Pastito.png')
             end;
-
 
             img.Left:=f*dx;
             img.Top:=c*dy;
@@ -360,8 +349,6 @@ begin
 
            end;
         end;
-
-
 
 
         for f:=1 to fils do
@@ -545,14 +532,6 @@ begin
 
 
        end;
-
-
-
-
-
-
-
-
 
   end;
        ctx.Show;

@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = -7
-  Height = 296
-  Top = 563
-  Width = 643
+  Left = -35
+  Height = 295
+  Top = 667
+  Width = 634
   Caption = 'Raton en el Laberinto'
-  ClientHeight = 276
-  ClientWidth = 643
+  ClientHeight = 275
+  ClientWidth = 634
   Menu = MainMenu1
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
@@ -15,7 +15,7 @@ object Form1: TForm1
   object Image1: TImage
     Left = -32
     Height = 304
-    Top = -24
+    Top = -29
     Width = 696
     OnClick = Image1Click
     OnMouseEnter = Image1MouseEnter
@@ -391,7 +391,7 @@ object Form1: TForm1
   object UsarTeclado: TButton
     Left = 195
     Height = 25
-    Top = 235
+    Top = 232
     Width = 171
     Caption = 'Usar Teclado'
     Font.CharSet = ANSI_CHARSET

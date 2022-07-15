@@ -910,7 +910,6 @@ begin
        reg.col:=raton.col;
        reg.nivelActual:=nivel;
      self.escribir(reg);
-
      self.cerrar;
 end;
 
