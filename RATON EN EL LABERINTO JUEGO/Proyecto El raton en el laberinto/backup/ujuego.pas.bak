@@ -405,16 +405,12 @@ begin
                img.Picture.LoadFromFile('images/TierraDefinitivo.png');
             end;
 
-
-
                    if IzquierdaEncerrado(C,F) then begin
                img.Picture.LoadFromFile('images/IzquierdaCerrado.png');
                sw:=true;
             end else if sw=False then begin
                img.Picture.LoadFromFile('images/TierraDefinitivo.png');
             end;
-
-
 
 
             if(lab[f,c]=1)then begin
@@ -984,14 +980,8 @@ begin
               result:=true;
              end;
             end;
-
-
-
-
       end;
-
   end;
-
 
   if nivel=3 then begin
       case f of

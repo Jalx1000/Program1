@@ -803,7 +803,6 @@ begin
    suma:=f+c;
 
 
-
    if (lab[c,f]=1) or (suma=2) then begin
        if up=true then begin
            raton.fil:=raton.fil+1;
@@ -822,21 +821,9 @@ begin
        end;
 
 
-
-
-
-
-
    end else if lab[c,f]=0 then begin
      DibujarRaton(DireccionMirada);
    end;
-
-
-
-
-
-
-
 
 end;
 
@@ -980,14 +967,8 @@ begin
               result:=true;
              end;
             end;
-
-
-
-
       end;
-
   end;
-
 
   if nivel=3 then begin
       case f of

@@ -52,15 +52,14 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button1Click(Sender: TObject);
-var ComenzarEn:integer;
+var ComenzarEn,n:integer;
 begin
-   ComenzarEn:=j.getNivel();
+  ComenzarEn:=J.getnivel+1;
    if comenzarEn=0 then begin
      comenzarEn:=1;
    end;
-
    J:=Juego.Crear(Lab);
-   J.CrearLab(comenzarEn,fil,col);
+  J.CrearLab(comenzarEn,fil,col);
 end;
 
 procedure TForm1.BIzqClick(Sender: TObject);

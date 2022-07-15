@@ -32,6 +32,7 @@ type
       //ctx es para interactuar con el Formulario
       Ctx:TLab;
     public
+
       constructor Crear(Form:TLab);
       procedure CrearLab(niv,PosF,PosC:integer);
       function getNivel():integer;
@@ -119,7 +120,7 @@ end;
 
 function Juego.getNivel: integer;
 begin
-  Result:=nivel;
+  Result:=NivelActual;
 end;
 procedure Juego.Automatico();
 
@@ -206,14 +207,14 @@ begin
      end;
 end;
 
-fprocedure Juego.Dibujar;
+procedure Juego.Dibujar;
 var
   f,c,dx,dy,ni:integer;
   img:TImage;
 begin
   case nivel of
      1: begin
-        sndPlaySound('sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
+        sndPlaySound('Sounds/Start.wav', SND_NODEFAULT Or SND_ASYNC  or SND_FILENAME);
         ctx.Caption:='Nivel :'+IntToStr(nivel);
         ctx.Width:=500;
         ctx.Height:=500;
@@ -306,6 +307,9 @@ begin
           img.Stretch:=true;
          end;//Fin caso 3
    end;
+
+
+
   ctx.Show;
   if(raton.fil=ini.fil)and(raton.col=ini.col)then
      ShowMessage('En la Entrada ...!!!');
@@ -315,23 +319,57 @@ end;
 procedure Juego.MoverRaton(dir:Direccion);
 var up,down,left,rigth:boolean;
   	f,c:integer;
-    DireccionMirada:integer;
+    DireccionMirada,suma:integer;
 begin
    case dir of
       Arriba:begin
              raton.fil:=raton.fil-1;
+             up:=true;
+             DireccionMirada:=1;
              end;
       Abajo :begin
              raton.fil:=raton.fil+1;
+             down:=true;
+             DireccionMirada:=0;
              end;
       Derecha:begin
              raton.col:=raton.col+1;
+             rigth:=true;
+             DireccionMirada:=3;
              end;
       Izquierda:begin
              raton.col:=raton.col-1;
+             left:=true;
+             DireccionMirada:=2;
              end;
    end;
-   Dibujar();
+     f:=raton.fil;
+     c:=raton.col;
+     suma:=f+c;
+
+
+   if (lab[c,f]=1) or (suma=2) then begin
+       if up=true then begin
+           raton.fil:=raton.fil+1;
+       end;
+
+       if down=true then begin
+           raton.fil:=raton.fil;
+       end;
+
+       if rigth=true then begin
+           raton.col:=raton.col;
+       end;
+
+       if left=true then begin
+           raton.col:=raton.col+1;
+       end;
+
+
+   end else if lab[c,f]=0 then begin
+     Dibujar();
+   end;
+
 end;
 
 end.

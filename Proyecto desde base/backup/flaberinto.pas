@@ -52,15 +52,43 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button1Click(Sender: TObject);
-var ComenzarEn:integer;
+var ComenzarEn,n:integer;
 begin
-   ComenzarEn:=j.getnivel;
-   if comenzarEn=0 then begin
-     comenzarEn:=1;
+   ComenzarEn:=1;
+   //if comenzarEn=0 then begin
+   //  comenzarEn:=1;
+   //end;
+   //
+   //J:=Juego.Crear(Lab);
+   //J.CrearLab(comenzarEn,fil,col);
+   ////
+   //while (comenzarEn=1) do begin
+   //       if(ComenzarEn<=3)then
+   //       begin
+   //         J:=Juego.Crear(Lab);
+   //         J.CrearLab(comenzarEn,fil,col);
+   //       end;
+   //       ComenzarEn:=ComenzarEn+1;
+   //end;
+   n:=j.getNivel();
+   case ComenzarEn of
+       1:begin
+         J:=Juego.Crear(Lab);
+         J.CrearLab(n+1,fil,col);
+         ComenzarEn:=ComenzarEn+1;
+       end;
+       2:begin
+         J:=Juego.Crear(Lab);
+         J.CrearLab(n+1,fil,col);
+         ComenzarEn:=ComenzarEn+1;
+       end;
+       3:begin
+         J:=Juego.Crear(Lab);
+         J.CrearLab(n+1,fil,col);
+         ComenzarEn:=ComenzarEn+1;
+         //Break;
+       end;
    end;
-
-   J:=Juego.Crear(Lab);
-   J.CrearLab(comenzarEn,fil,col);
 end;
 
 procedure TForm1.BIzqClick(Sender: TObject);

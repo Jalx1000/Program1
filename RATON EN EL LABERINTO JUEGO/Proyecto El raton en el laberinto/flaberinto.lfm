@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = -9
+  Left = -7
   Height = 296
-  Top = 704
+  Top = 563
   Width = 643
   Caption = 'Raton en el Laberinto'
   ClientHeight = 276

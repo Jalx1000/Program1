@@ -244,7 +244,7 @@ end;
 procedure TForm1.SpeedButton1Click(Sender: TObject);
 var ComenzarEn:integer;
 begin
-   ComenzarEn:=J.getnivel;
+   ComenzarEn:=J.getnivel+1;
    if comenzarEn=0 then begin
      comenzarEn:=1;
    end;

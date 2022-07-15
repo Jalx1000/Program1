@@ -5,13 +5,14 @@ unit flab;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,MMSystem;
 
 type
 
   { TLab }
 
   TLab = class(TForm)
+    procedure FormCreate(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { private declarations }
@@ -27,6 +28,11 @@ implementation
 {$R *.lfm}
 
 { TLab }
+
+procedure TLab.FormCreate(Sender: TObject);
+begin
+
+end;
 
 procedure TLab.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin

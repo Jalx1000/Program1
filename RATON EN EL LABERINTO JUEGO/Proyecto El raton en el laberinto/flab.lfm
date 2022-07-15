@@ -1,11 +1,11 @@
 object Lab: TLab
-  Left = 589
+  Left = 411
   Height = 781
-  Top = 152
+  Top = 0
   Width = 781
   Caption = 'Lab'
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   Position = poScreenCenter
-  LCLVersion = '2.0.12.0'
+  LCLVersion = '2.2.0.4'
 end
